@@ -276,7 +276,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming with Caution", "Surfing", "Volleyball", "Scuba Diving", "Kayaking", "Tidepooling", "Boating", "Wildlife Viewing"],
     "hours": "6AM-10PM",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/qlIBikh.jpg"
   },
   { "name": "Salt Creek Beach",
     "county": "Orange County",
@@ -288,7 +289,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming with Caution", "Surfing", "Tidepooling", "Grilling", "Wildlife Viewing", "Paddleboarding"],
     "hours": "5AM-12AM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/o0uKATz.jpg"
   },
   { "name": "Crescent Bay Beach",
     "county": "Orange County",
@@ -300,7 +302,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming with Caution", "Sunbathing", "Scuba Diving", "Tidepooling", "Kayaking", "Wildlife Viewing"],
     "hours": "6AM-10PM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/gwn7OGW.jpg"
   },
   { "name": "Coronado Beach",
     "county": "San Diego County",
@@ -312,7 +315,8 @@ const beaches = [
     "camping": false,
     "activities": ["Photography", "Swimming", "Tidepooling", "Shipwreck Exploring", "Surfing", "Skating", "Biking"],
     "hours": "6AM-11PM",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/W92ls7l.jpg"
   },
   { "name": "Ocean Beach",
     "county": "San Diego County",
@@ -324,7 +328,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming with Caution", "Volleyball", "Nature Viewing", "Tidepooling", "Fishing", "Biking", "Paddleboarding"],
     "hours": "4AM-2AM",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/Ohkb1x8.jpg"
   },
   { "name": "La Jolla Shores",
     "county": "San Diego County",
@@ -336,7 +341,8 @@ const beaches = [
     "camping": false,
     "activities": ["Surfing", "Swimming with Caution", "Scuba Diving", "Snorkeling", "Kayaking", "Tidepooling", "Paddleboarding", "Hiking"],
     "hours": "N/A",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/NOFL8Cp.jpg"
   },
   { "name": "Tourmaline Surfing Park",
     "county": "San Diego County",
@@ -348,7 +354,8 @@ const beaches = [
     "camping": false,
     "activities": ["Surfing", "Swimming with Caution", "Volleyball", "Paddleboarding", "Biking", "Skating", "Snorkeling"],
     "hours": "4AM-2AM",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/31wCcVK.jpg"
   },
   { "name": "Imperial Beach",
     "county": "San Diego County",
@@ -360,7 +367,8 @@ const beaches = [
     "camping": false,
     "activities": ["Surfing", "Swimming with Caution", "Fishing"],
     "hours": "7AM to Sunset",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/gzvCa6A.jpg"
   },
   { "name": "Silver Strand State Beach",
     "county": "San Diego County",
@@ -372,7 +380,8 @@ const beaches = [
     "camping": false,
     "activities": ["Wildlife Viewing", "Swimming with Caution", "Fishing", "Volleyball", "Biking"],
     "hours": "8AM - closing time varies",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/rJ4MQny.jpg"
   },
   { "name": "Del Mar City Beach",
     "county": "San Diego County",
@@ -384,7 +393,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming with Caution", "Surfing", "Fishing", "Playground", "Volleyball", "Paddleboarding"],
     "hours": "7:15AM to Sunset",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/ZYgvjpI.jpg"
   }
 ];
 
