@@ -419,4 +419,4 @@ const beaches = [
   }
 ];
 
-module.exports = { beachCounties, beaches };
+export {beachCounties, beaches}
