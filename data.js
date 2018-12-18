@@ -167,7 +167,8 @@ const beaches = [
     "camping": false,
     "activities": ["Surfing", "Shopping", "Swimming", "Skating", "Biking", "Walking", "Street Entertainment", "Exercise"],
     "hours": "6AM-10PM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/mMCZQbW.jpg"
   },
   { "name": "Rosie’s Dog Beach",
     "county": "Los Angeles County",
@@ -179,7 +180,8 @@ const beaches = [
     "camping": false,
     "activities": ["Skating", "Biking", "Dog Walking", "Volleyball"],
     "hours": "6AM-8PM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/K8XUYch.jpg"
   },
   { "name": "Santa Monica State Beach",
     "county": "Los Angeles County",
@@ -191,7 +193,8 @@ const beaches = [
     "camping": false,
     "activities": ["Shopping", "Surfing", "Playground", "Amusement Park", "Biking", "Walking", "Sunbathing", "Volleyball", "Paddleboarding", "Exercise", "Fishing", "Aquarium"],
     "hours": "24Hrs",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/0tfeYw1.jpg"
   },
   { "name": "Leo Carrillo State Park",
     "county": "Los Angeles County",
@@ -203,7 +206,8 @@ const beaches = [
     "camping": true,
     "activities": ["Swimming", "Surfing", "Fishing", "Tidepooling", "Cave Exploring", "Hiking", "Snorkeling", "Nature Viewing", "Wildlife Viewing", "Boating"],
     "hours": "8AM-10PM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/TfMPYJH.jpg"
   },
   { "name": "El Matador Beach",
     "county": "Los Angeles County",
@@ -215,7 +219,8 @@ const beaches = [
     "camping": false,
     "activities": ["Cave Exploring", "Photography", "Swimming", "Nature Viewing", "Wildlife Viewing", "Snorkeling", "Sunbathing"],
     "hours": "8AM to Sunset",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/IyPbOQp.jpg"
   },
   { "name": "Dockweiler State Beach",
     "county": "Los Angeles County",
@@ -227,7 +232,8 @@ const beaches = [
     "camping": false,
     "activities": ["Boating", "Scuba Diving", "Snorkeling", "Swimming", "Surfing", "Biking"],
     "hours": "Mon-Fri, 9AM-5PM",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/XKodWmW.jpg"
   },
   { "name": "Manhattan State Beach",
     "county": "Los Angeles County",
@@ -239,7 +245,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming with Caution", "Surfing", "Volleyball", "Biking", "Fishing at Pier", "Playground"],
     "hours": "6AM-12AM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/FTNjRVm.jpg"
   },
   { "name": "Crystal Cove State Park",
     "county": "Orange County",
@@ -251,7 +258,8 @@ const beaches = [
     "camping": true,
     "activities": ["Surfing", "Nature Viewing", "Wildlife Viewing", "Swimming with Caution", "Kayaking", "Tidepooling", "Hiking", "Biking", "Horseback Riding", "Scuba Diving"],
     "hours": "6AM to Sunset",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/995US2d.jpg"
   },
   { "name": "Huntington State Beach",
     "county": "Orange County",
@@ -263,7 +271,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming with Caution", "Surfing", "Fishing", "Sunbathing", "Volleyball", "Basketball", "Biking", "Wildlife Viewing"],
     "hours": "6AM-10PM",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/M21ONlY.jpg"
   },
   { "name": "Newport Beach",
     "county": "Orange County",
@@ -275,7 +284,8 @@ const beaches = [
     "camping": false,
     "activities": ["Surfing", "Swimming with Caution", "Sunbathing", "Volleyball", "Wildlife Viewing", "Biking", "Skating"],
     "hours": "6AM-10PM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/nuul5eh.jpg"
   },
   { "name": "Corona Del Mar State Beach",
     "county": "Orange County",
