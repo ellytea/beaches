@@ -36,7 +36,9 @@ const beaches = [
     "camping": true,
     "activities": ["Hiking", "Biking", "Surfing", "Horseback Riding", "Tidepooling", "Fishing", "Snorkeling", "Nature Viewing", "Wildlife Viewing", "Photography"],
     "hours": "6AM-10PM",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/VdqbEDr.jpg" 
+
   },
   { "name": "Cayucos State Beach",
     "county": "San Luis Obispo County",
@@ -48,7 +50,8 @@ const beaches = [
     "camping": false,
     "activities": ["Fishing", "Swimming", "Surfing", "Boating", "Tidepooling"],
     "hours": "N/A",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/u7gAUPB.png" 
   },
   { "name": "Pismo State Beach",
     "county": "San Luis Obispo County",
@@ -60,7 +63,8 @@ const beaches = [
     "camping": true,
     "activities": ["Hiking", "Swimming", "Fishing", "Horseback Riding", "Sand Dunes", "Scuba Diving/Snorkeling", "Nature Viewing", "Wildlife Viewing", "Surfing"],
     "hours": "N/A",
-    "fire-pits": true
+    "fire-pits": true,
+    "image": "https://i.imgur.com/0b5eBBG.jpg" 
   },
   { "name": "William Randolph Hearst Memorial State Beach",
     "county": "San Luis Obispo County",
@@ -72,7 +76,8 @@ const beaches = [
     "camping": false,
     "activities": ["Swimming", "Fishing", "Kayaking", "Boating", "Wildlife Viewing", "Boogie Boarding"],
     "hours": "Dawn to Dusk",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/hfcSwSw.jpg" 
   },
   { "name": "Butterfly Beach",
     "county": "Santa Barbara County",
@@ -84,7 +89,8 @@ const beaches = [
     "camping": false,
     "activities": ["Sunbathing", "Biking", "Fishing", "Beach Walking"],
     "hours": "N/A",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/5gKhTil.jpg" 
   },
   { "name": "Santa Claus Beach",
     "county": "Santa Barbara County",
@@ -96,7 +102,8 @@ const beaches = [
     "camping": false,
     "activities": ["Paddleboarding", "Boogie Boarding", "Swimming", "Surfing", "Sunbathing"],
     "hours": "N/A",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/PfP3gTd.jpg" 
   },
   { "name": "Arroyo Burro Beach",
     "county": "Santa Barbara County",
@@ -108,7 +115,8 @@ const beaches = [
     "camping": false,
     "activities": ["Grilling", "Wildlife Viewing", "Horseback Riding", "Fishing", "Surfing", "Swimming"],
     "hours": "8AM to Sunset",
-    "fire-pits": false
+    "fire-pits": false,
+    "image": "https://i.imgur.com/tIXJFQb.jpg"
   },
   { "name": "Carpinteria State Beach",
     "county": "Santa Barbara County",
@@ -120,7 +128,8 @@ const beaches = [
     "camping": true,
     "activities": ["Hiking", "Biking", "Swimming", "Fishing", "Surfing", "Snorkeling", "Tidepooling"],
     "hours": "7AM to Sunset",
-    "fire-pits": false
+    "fire-pits": false,
+    "image":"https://i.imgur.com/622W0Pt.jpg"
   },
   { "name": "Mesa Lane Beach",
     "county": "Santa Barbara County",
@@ -132,7 +141,8 @@ const beaches = [
     "camping": false,
     "activities": ["Surfing", "Paddleboarding", "Swimming", "Sunbathing", "Tidepooling"],
     "hours": "N/A",
-    "fire-pits": false
+    "fire-pits": false,
+    "image":"https://i.imgur.com/GguceUJ.jpg"
   },
   { "name": "Oxnard Beach Park",
     "county": "Ventura County",
@@ -144,7 +154,8 @@ const beaches = [
     "camping": false,
     "activities": ["Volleyball", "Swimming", "Surfing", "Sunbathing", "Biking", "Grilling", "Basketball", "Playground"],
     "hours": "N/A",
-    "fire-pits": false
+    "fire-pits": false,
+    "image":"https://i.imgur.com/uziPYW4.jpg"
   },
   { "name": "Venice Beach",
     "county": "Los Angeles County",
