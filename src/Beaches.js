@@ -18,7 +18,10 @@ class Beaches extends Component {
         {
           this.state.beaches.map((beach) => {
             return (
-              <li>{beach.name}</li>
+              <div className='beach-grid'>
+                <ul>{beach.name}</ul>
+                <img src={beach.image}/>
+              </div>
             )
           })
         }
