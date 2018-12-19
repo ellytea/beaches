@@ -6,8 +6,6 @@ class Beaches extends Component {
     
   }
 
-
-
   render () {
     return (
       <ul>

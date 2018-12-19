@@ -9,8 +9,7 @@ class App extends Component {
     super();
     this.state = {
       beaches: beaches
-    }
-    
+    }  
   }
 
   render() {
