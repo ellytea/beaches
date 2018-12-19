@@ -1,22 +1,29 @@
 import React, { Component } from 'react';
+import { beachCounties, beaches } from './data.js'
+
 
 class Beaches extends Component {
-  constructor(props) {
+  constructor() {
     super();
-    
+    this.state = {
+      beaches: beaches
+    }
   }
 
   render () {
     return (
-      <ul>
-      {
-        this.props.beaches.map((beach) => {
-          return (
-            <li>{beach.name}</li>
-          )
-        })
-      }
-      </ul>
+      <div className='beaches-page'>
+
+        <ul>
+        {
+          this.state.beaches.map((beach) => {
+            return (
+              <li>{beach.name}</li>
+            )
+          })
+        }
+        </ul>
+      </div>
     )
   }
 }
