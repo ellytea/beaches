@@ -25,6 +25,10 @@
   overflow: auto;
 }
 
+.beach-pics {
+  height: 300px;
+}
+
 .headline {
   color: black;
   margin-top:150px;
