@@ -22,7 +22,11 @@
   position: absolute;
   top: 0;
   right: 0;
-  overflow: hidden;
+  overflow: auto;
+}
+
+.beach-pics {
+  height: 300px;
 }
 
 .headline {
