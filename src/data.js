@@ -419,4 +419,4 @@ const beaches = [
   }
 ];
 
-export {beachCounties, beaches}
+export { beachCounties, beaches }
