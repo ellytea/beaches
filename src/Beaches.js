@@ -42,7 +42,7 @@ class Beaches extends Component {
             return (
               <div className='beach-grid'>
                 <ul>{beach.name}</ul>
-                <img src={beach.image}/>
+                <img className='beach-pics' src={beach.image}/>
               </div>
             )
           })
