@@ -10,15 +10,15 @@ class Beaches extends Component {
 
   render () {
     return (
-      <ul>
+      <div>
       {
         this.props.beaches.map((beach) => {
           return (
-            <li>{beach.name}</li>
+            <img src={beach.image} />
           )
         })
       }
-      </ul>
+      </div>
     )
   }
 }
