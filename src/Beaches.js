@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BeachCard from './BeachCard.js'
+import BeachPopup from './BeachPopup.js'
 
 class Beaches extends Component {
   constructor() {
@@ -31,30 +31,45 @@ class Beaches extends Component {
       .catch(error => console.log('error'))
   }
 
-  beachVisibility = () => {
+  beachVisibility = (e, name) => {
+    let index;
+    let beaches = this.state.beaches
+    return beaches.find((beach, i) => {
+     if (beach.name === name) {
+        index = i
+      } 
+      beaches[index].isVisible = true
       this.setState({
-        cardVisible: !this.state.cardVisible
-      })
-  }
+        beaches: beaches
+      }) 
+    })
+  } 
+
+  // beachVisibility = (e, name) => {
+  //   if (e.target.innerText === name)
+  //     this.setState({
+  //       cardVisible: !this.state.cardVisible
+  //     })
+  // }
 
   render () {
     return (
       <div className='beaches-page'>
-        <ul>
+        <div className='beach-grid'>
         {
           this.state.beaches.map((beach) => {
             return (
-              <div className='beach-grid'>
-                <div className='beach-card'>
-                  <a onClick={this.beachVisibility} href='#'>{beach.name}</a>
-                  <img className='beach-pics' src={beach.image}/>
-                  {this.state.cardVisible && <BeachCard beach={beach} beachVisibility={this.beachVisibility} />}
-                </div>
-              </div>
+                  <div key={beach.name}
+                        className='beach-card'>
+                        <p onClick={e => this.beachVisibility(e, beach.name)}>{beach.name}</p>
+                    <img className='beach-pics' src={beach.image}/>
+                    {beach.isVisible && <BeachPopup beachVisibility={this.beachVisibility}
+                                                   beach={beach} />}
+                  </div>
             )
           })
         }
-        </ul>
+        </div>
       </div>
     )
   }

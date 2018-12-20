@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
-class BeachCard extends Component {
+class BeachPopup extends Component {
   constructor(props) {
     super()
-    this.state = {
-      beach: {}
-    };
   }
 
 
@@ -13,7 +10,7 @@ class BeachCard extends Component {
     const beachProps = Object.keys(this.props.beach)
     return (
       <div>
-        <a onClick={this.props.beachVisibility} href='#'>x</a>
+        <a onClick={e => this.props.beachVisibility(e)} href='#'>x</a>
         <p>{this.props.beach.name}</p>
         <p>{this.props.beach.county}</p>
         <ul>
@@ -36,4 +33,4 @@ class BeachCard extends Component {
   }
 }
 
-export default BeachCard;
+export default BeachPopup;
