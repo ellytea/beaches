@@ -32,15 +32,9 @@ class Beaches extends Component {
   }
 
   beachVisibility = () => {
-    if (this.state.cardVisible === false) {
       this.setState({
-        cardVisible: true
+        cardVisible: !this.state.cardVisible
       })
-    } else {
-      this.setState({
-        cardVisible: false
-      })
-    }
   }
 
   render () {
