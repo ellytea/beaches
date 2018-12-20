@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Beaches from './Beaches.js'
 import LandingPage from './LandingPage.js';
-// import { beachCounties, beaches } from './data.js'
 
 
 class App extends Component {

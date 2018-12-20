@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-// import { beachCounties, beaches } from './data.js'
-
+import BeachCard from './BeachCard.js'
 
 class Beaches extends Component {
   constructor() {
     super();
     this.state = {
       beaches: [],
-      beachCounties: []
+      beachCounties: [],
+      cardVisible: false
     }
   }
 
@@ -21,7 +21,6 @@ class Beaches extends Component {
       })
       .catch(error => console.log('error'))
 
-
     fetch('https://whateverly-datasets.herokuapp.com/api/v1/beachCounties')
       .then(response => response.json())
       .then(data => {
@@ -32,17 +31,31 @@ class Beaches extends Component {
       .catch(error => console.log('error'))
   }
 
+  beachVisibility = () => {
+    if (this.state.cardVisible === false) {
+      this.setState({
+        cardVisible: true
+      })
+    } else {
+      this.setState({
+        cardVisible: false
+      })
+    }
+  }
+
   render () {
     return (
       <div className='beaches-page'>
-
         <ul>
         {
           this.state.beaches.map((beach) => {
             return (
               <div className='beach-grid'>
-                <ul>{beach.name}</ul>
-                <img className='beach-pics' src={beach.image}/>
+                <div className='beach-card'>
+                  <a onClick={this.beachVisibility} href='#'>{beach.name}</a>
+                  <img className='beach-pics' src={beach.image}/>
+                  {this.state.cardVisible && <BeachCard beach={beach} beachVisibility={this.beachVisibility} />}
+                </div>
               </div>
             )
           })
