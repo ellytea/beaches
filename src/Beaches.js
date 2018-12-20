@@ -35,19 +35,19 @@ class Beaches extends Component {
   render () {
     return (
       <div className='beaches-page'>
-
-        <ul>
         {
           this.state.beaches.map((beach) => {
             return (
               <div className='beach-grid'>
-                <ul>{beach.name}</ul>
-                <img className='beach-pics' src={beach.image}/>
+                <div className='beach-cards'>
+                  <ul>{beach.name}</ul>
+                  <img className='beach-pics' src={beach.image}/>
+                </div>
               </div>
             )
           })
         }
-        </ul>
+        
       </div>
     )
   }
