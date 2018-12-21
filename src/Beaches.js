@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import BeachesCard from './BeachesCard.js';
-// import { beachCounties, beaches } from './data.js'
-
 
 class Beaches extends Component {
   constructor() {

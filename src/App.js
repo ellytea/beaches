@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import Beaches from './Beaches.js'
 import LandingPage from './LandingPage.js';
-// import { beachCounties, beaches } from './data.js'
 
 
 class App extends Component {
@@ -25,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <LandingPage renderBeaches={this.renderMain}/>
+        <LandingPage renderBeaches={this.renderMain} />
         <h1>Beachy Keen</h1>
         {
           this.keys.map( key => {
