@@ -84,6 +84,7 @@
   width: 100%;
 }
 
+/*BeachCard POP-UP*/
 .popup {
   background-color: black;
   border-radius: 15px;
@@ -98,6 +99,21 @@
   top: 180px;
   width: 1200px;
   z-index: 3;
+}
+
+/*Header Styling*/
+.header {
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+  overflow: hidden;
+  height: 150px;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 
 
