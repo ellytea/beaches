@@ -7,12 +7,16 @@ class BeachesCard extends Component {
   }
 
   render() {
+    if (!this.props.selectedBeach) {
+      return ( <div className='none'></div> );
+    } else {
     return (
       <div className='popup'> 
         <p>{this.props.selectedBeach.name}</p>
         <p>{this.props.selectedBeach.county}</p>
       </div>
     )
+    }
   }
   
     
