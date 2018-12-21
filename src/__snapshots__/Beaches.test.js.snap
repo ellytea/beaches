@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Beaches should match the snapshot with all data passed in 1`] = `
+<div
+  className="beaches-page"
+>
+  <div
+    className="beach-body"
+  />
+  <BeachesCard
+    selectedBeach=""
+  />
+</div>
+`;
