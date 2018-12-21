@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.popup-img {
+  height: 400px;
+}
+
 .landing-page {
   background-image: url('./images/guard.jpg');
   background-size: cover;
@@ -34,22 +38,22 @@
 /*  text-transform: uppercase;*/
 }
 
-    button {
-      padding: 0.5em 3em;
-      border: 0.14em solid white;
-      background: none;
-      color: white;
-      box-sizing: border-box;
-      text-decoration: none;
-      font-weight: 320;
-      font-size: 1.2em;
-      margin-right: 1102px;
+.landing-button {
+  padding: 0.5em 3em;
+  border: 0.14em solid white;
+  background: none;
+  color: white;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 320;
+  font-size: 1.2em;
+  margin-right: 1102px;
 
-      &:hover {
-        color: white;
-        text-shadow: 1px 2px 1px black;
-      }
-    }
+  &:hover {
+    color: white;
+    text-shadow: 1px 2px 1px black;
+  }
+}
 
 .hide {
   display: none;

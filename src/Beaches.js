@@ -40,7 +40,12 @@ class Beaches extends Component {
     this.setState({
       beachCard: selectedBeach
     })
-  console.log(selectedBeach)
+  }
+
+  closeBeach = (e) => {
+    this.setState({
+      beachCard: undefined
+    })
   }
 
 
@@ -60,7 +65,7 @@ class Beaches extends Component {
           })
         }
         </div>
-        <BeachesCard selectedBeach={this.state.beachCard} /> 
+        <BeachesCard selectedBeach={this.state.beachCard} closeBeach={this.closeBeach} /> 
       </div>
     )
   }

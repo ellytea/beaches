@@ -32,7 +32,6 @@ class App extends Component {
               switch (key) {
               case 'Beaches':
                 return <Beaches key={key} />;
-              
               }
             }
           })
