@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import BeachesCard from './BeachesCard.js';
 // import { beachCounties, beaches } from './data.js'
 
 
@@ -7,7 +8,8 @@ class Beaches extends Component {
     super();
     this.state = {
       beaches: [],
-      beachCounties: []
+      beachCounties: [],
+      beachCard: ''
     }
   }
 
@@ -32,22 +34,35 @@ class Beaches extends Component {
       .catch(error => console.log('error'))
   }
 
+  beachVisibility = (e) => {
+    let name = e.target.innerText;
+    let selectedBeach = this.state.beaches.find((beach) => {
+      return beach.name === name;
+    })
+    this.setState({
+      beachCard: selectedBeach
+    })
+  console.log(selectedBeach)
+  }
+
+
   render () {
     return (
       <div className='beaches-page'>
+        <div className='beach-body'>
         {
           this.state.beaches.map((beach) => {
             return (
-              <div className='beach-grid'>
-                <div className='beach-cards'>
-                  <ul>{beach.name}</ul>
-                  <img className='beach-pics' src={beach.image}/>
+                <div onClick={this.beachVisibility}
+                     className='beach-card'>
+                     <h1>{beach.name}</h1> 
+                     <img className='beach-pics' src={beach.image}/>
                 </div>
-              </div>
             )
           })
         }
-        
+        </div>
+        <BeachesCard selectedBeach={this.state.beachCard} /> 
       </div>
     )
   }
