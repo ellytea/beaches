@@ -52,6 +52,9 @@ class Beaches extends Component {
   render () {
     return (
       <div className='beaches-page'>
+        <header className="header">
+        <h1 className='header-title'>Beachy Keen</h1>
+        </header>
         <div className='beach-body'>
         {
           this.state.beaches.map((beach) => {

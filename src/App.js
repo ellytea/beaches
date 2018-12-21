@@ -25,7 +25,6 @@ class App extends Component {
     return (
       <div className="App">
         <LandingPage renderBeaches={this.renderMain} />
-        <h1>Beachy Keen</h1>
         {
           this.keys.map( key => {
             if (this.state[key]) {

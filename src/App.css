@@ -20,10 +20,10 @@
 
 .landing-headline {
   color: black;
-  margin-top:50px;
+  margin-top:35px;
   font-size: 5em;
   margin-right: 800px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: rgba(254,173,185,0.5);
 /*  text-transform: uppercase;*/
 }
@@ -34,26 +34,28 @@
   font-weight: 450;
   margin-right: 950px;
   margin-top: 10px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 /*  text-transform: uppercase;*/
 }
 
-.landing-button {
-  padding: 0.5em 3em;
-  border: 0.14em solid white;
-  background: none;
-  color: white;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-weight: 320;
-  font-size: 1.2em;
-  margin-right: 1102px;
+    button {
+      padding: 0.5em 3em;
+      border: 0.14em double white;
+      background: none;
+      background-color: rgba(254,173,185,0.1);
+      color: white;
+      box-sizing: border-box;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 420;
+      font-size: 1.2em;
+      margin-right: 1075px;
 
-  &:hover {
-    color: white;
-    text-shadow: 1px 2px 1px black;
-  }
-}
+      &:hover {
+        color: white;
+        text-shadow: 1px 2px 1px black;
+      }
+    }
 
 .hide {
   display: none;
@@ -74,20 +76,21 @@
   height: 300px;
 }
 
-.beach-cards {
+.beach-card {
   display: grid;
   width: 100%;
 }
 
-.beach-grid {
+.beach-body {
   margin: 15px 50px;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   width: 100%;
 }
 
+/*BeachCard Pop-up Styling*/
 .popup {
   background-color: black;
   border-radius: 15px;
@@ -102,6 +105,21 @@
   top: 180px;
   width: 1200px;
   z-index: 3;
+}
+
+/*Header Styling*/
+.header {
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+  overflow: hidden;
+  height: 150px;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-top: 20px;
 }
 
 
