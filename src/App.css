@@ -38,24 +38,24 @@
 /*  text-transform: uppercase;*/
 }
 
-    button {
+.landing-button {
       padding: 0.5em 3em;
-      border: 0.14em double white;
-      background: none;
-      background-color: rgba(254,173,185,0.1);
-      color: white;
+  border: 0.14em double white;
+  background: none;
+  background-color: rgba(254,173,185,0.1);
+  color: white;
       box-sizing: border-box;
       text-decoration: none;
-      text-transform: uppercase;
-      font-weight: 420;
-      font-size: 1.2em;
-      margin-right: 1075px;
+  text-transform: uppercase;
+  font-weight: 420;
+  font-size: 1.2em;
+  margin-right: 1075px;
 
-      &:hover {
-        color: white;
-        text-shadow: 1px 2px 1px black;
-      }
-    }
+  &:hover {
+    color: white;
+    text-shadow: 1px 2px 1px black;
+  }
+}
 
 .hide {
   display: none;
