@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import BeachesCard from './BeachesCard.js';
-// import { beachCounties, beaches } from './data.js'
-
 
 class Beaches extends Component {
   constructor() {
@@ -37,10 +35,16 @@ class Beaches extends Component {
   beachVisibility = (e) => {
     let name = e.target.innerText;
     let selectedBeach = this.state.beaches.find((beach) => {
-      return beach.name === name;
+      return beach.name.toUpperCase() === name;
     })
     this.setState({
       beachCard: selectedBeach
+    })
+  }
+
+  closeBeach = (e) => {
+    this.setState({
+      beachCard: undefined
     })
   }
 
@@ -57,14 +61,14 @@ class Beaches extends Component {
             return (
                 <div onClick={this.beachVisibility}
                      className='beach-card'>
-                     <h1>{beach.name}</h1> 
+                     <h1 className='beach-name'>{beach.name}</h1> 
                      <img className='beach-pics' src={beach.image}/>
                 </div>
             )
           })
         }
         </div>
-        <BeachesCard selectedBeach={this.state.beachCard} /> 
+        <BeachesCard selectedBeach={this.state.beachCard} closeBeach={this.closeBeach} /> 
       </div>
     )
   }

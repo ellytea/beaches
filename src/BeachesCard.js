@@ -7,13 +7,32 @@ class BeachesCard extends Component {
   }
 
   render() {
+    const beachProps = this.props.selectedBeach ? Object.keys(this.props.selectedBeach) : []
     if (!this.props.selectedBeach) {
       return ( <div className='none'></div> );
     } else {
     return (
-      <div className='popup'> 
-        <p>{this.props.selectedBeach.name}</p>
+      <div className='popup'>
+        <img className='popup-img' src={this.props.selectedBeach.image}/>
+        <h1>{this.props.selectedBeach.name}</h1>
         <p>{this.props.selectedBeach.county}</p>
+        <ul>Recommended Activities:
+           {
+            this.props.selectedBeach.activities.map((activity) => {
+              return <li>{activity}</li>
+            })
+           }
+         </ul>
+         <ul>This beach has:
+           {
+            beachProps.map((prop) => {
+               if (this.props.selectedBeach[prop] === true) {
+                 return <li>{prop}</li>
+               }
+            })
+           }
+        </ul>
+        <button className='pop-btn' onClick={this.props.closeBeach}>X close</button>
       </div>
     )
     }
