@@ -48,7 +48,15 @@ class Beaches extends Component {
     })
   }
 
-  
+  filterByCounty = (e) => {
+    let filteredBeaches = this.state.beaches.filter((beach) => {
+      if(e.target.innerText === beach.county){
+        this.setState({
+          beaches: filteredBeaches
+        })
+      }
+    })
+  }
 
   render () {
     return (
