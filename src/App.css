@@ -30,7 +30,6 @@
   margin-right: 950px;
   margin-top: 10px;
   margin-bottom: 10px;
-/*  text-transform: uppercase;*/
 }
 
 .landing-button {
@@ -45,11 +44,11 @@
   font-weight: 420;
   font-size: 1.2em;
   margin-right: 1075px;
+}
 
-  &:hover {
-    color: white;
-    text-shadow: 1px 2px 1px black;
-  }
+.landing-button:hover {
+  color: white;
+  filter: drop-shadow(0 0 0.75rem crimson);
 }
 
 .hide {
@@ -67,39 +66,42 @@
   overflow: auto;
 }
 
+.beach-body {
+  margin-top: 230px;
+  margin-bottom: 20px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+}
+
 .beach-name {
   font-size: 1.5em;
+  margin: auto auto 10px auto;
   text-transform: uppercase;
   width: 400px;
 }
 
 .beach-name:hover {
-  color: hotpink;
+  filter: drop-shadow(0 0 0.75rem crimson);
+  color: white;
 }
 
 .beach-pics {
   border-radius: 15px;
   margin: auto;
-  width: 270px;
-  height: 200px;
+  width: 95%;
+  height: 230px;
 }
 
 .beach-card {
-  background: white;
+  background: rgba(255,255,255,0.6);
   border-radius: 15px;
-  display: flex;
+  align-items: center;
   padding: 10px;
   margin: auto;
   width: 90%;
-}
-
-.beach-body {
-  margin-top: 230px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  width: 100%;
 }
 
 /*BeachCard Pop-up Styling*/
