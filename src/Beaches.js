@@ -61,7 +61,7 @@ class Beaches extends Component {
             return (
                 <div onClick={this.beachVisibility}
                      className='beach-card'>
-                     <h1 className='beach-name'>{beach.name}</h1> 
+                     <h1 className='beach-name'>{beach.name}</h1>
                      <img className='beach-pics' src={beach.image}/>
                 </div>
             )

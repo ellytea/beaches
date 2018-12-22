@@ -13,7 +13,7 @@ class App extends Component {
     this.keys = Object.keys(this.state);  
   }
 
-    renderMain = (event) => {
+  renderMain = (event) => {
     const section = event.target.classList[0];
     this.setState({
       Beaches: true,
