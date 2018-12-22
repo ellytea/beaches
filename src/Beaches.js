@@ -50,8 +50,8 @@ class Beaches extends Component {
   }
 
   filterByCounty = (e) => {
-    let beaches = this.state.beaches 
-    let filteredBeaches = beaches.filter((beach) => {
+    let allBeaches = this.state.beaches 
+    let filteredBeaches = this.state.beaches.filter((beach) => {
       if (e.target.value === beach.county) {
         return beach
       }
@@ -60,7 +60,7 @@ class Beaches extends Component {
           beaches: filteredBeaches
     })
   }
-
+    
   render () {
     return (
       <div className='beaches-page'>
