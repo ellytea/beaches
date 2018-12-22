@@ -35,7 +35,7 @@ class Beaches extends Component {
   beachVisibility = (e) => {
     let name = e.target.innerText;
     let selectedBeach = this.state.beaches.find((beach) => {
-      return beach.name === name;
+      return beach.name.toUpperCase() === name;
     })
     this.setState({
       beachCard: selectedBeach
@@ -61,7 +61,7 @@ class Beaches extends Component {
             return (
                 <div onClick={this.beachVisibility}
                      className='beach-card'>
-                     <h1>{beach.name}</h1> 
+                     <h1 className='beach-name'>{beach.name}</h1> 
                      <img className='beach-pics' src={beach.image}/>
                 </div>
             )

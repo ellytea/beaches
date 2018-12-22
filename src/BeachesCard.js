@@ -13,9 +13,8 @@ class BeachesCard extends Component {
     } else {
     return (
       <div className='popup'>
-        <button className='pop-btn' onClick={this.props.closeBeach}>X close</button>
         <img className='popup-img' src={this.props.selectedBeach.image}/>
-        <p>{this.props.selectedBeach.name}</p>
+        <h1>{this.props.selectedBeach.name}</h1>
         <p>{this.props.selectedBeach.county}</p>
         <ul>Recommended Activities:
            {
@@ -32,7 +31,8 @@ class BeachesCard extends Component {
                }
             })
            }
-         </ul>
+        </ul>
+        <button className='pop-btn' onClick={this.props.closeBeach}>X close</button>
       </div>
     )
     }
