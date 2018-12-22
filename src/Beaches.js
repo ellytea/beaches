@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BeachesCard from './BeachesCard.js';
+import Filter from './Filter.js';
 
 class Beaches extends Component {
   constructor() {
@@ -49,12 +50,14 @@ class Beaches extends Component {
   }
 
   filterByCounty = (e) => {
-    let filteredBeaches = this.state.beaches.filter((beach) => {
-      if(e.target.innerText === beach.county){
-        this.setState({
-          beaches: filteredBeaches
-        })
+    let beaches = this.state.beaches 
+    let filteredBeaches = beaches.filter((beach) => {
+      if (e.target.value === beach.county) {
+        return beach
       }
+    })
+    this.setState({
+          beaches: filteredBeaches
     })
   }
 
@@ -64,6 +67,8 @@ class Beaches extends Component {
         <header className="header">
         <h1 className='header-title'>Beachy Keen</h1>
         </header>
+        <Filter filterByCounty={this.filterByCounty}
+          beaches={this.state.beaches}/>
         <div className='beach-body'>
         {
           this.state.beaches.map((beach) => {
