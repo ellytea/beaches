@@ -23,7 +23,7 @@ class BeachesCard extends Component {
             })
            }
          </ul>
-         <ul>This beach has:
+         <ul>Amenities:
            {
             beachProps.map((prop) => {
                if (this.props.selectedBeach[prop] === true) {
