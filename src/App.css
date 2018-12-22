@@ -66,6 +66,22 @@
   overflow: auto;
 }
 
+/*Header Styling*/
+.header {
+  background-size: cover;
+  background-color: rgba(255,255,255,0.6);
+  overflow: hidden;
+  position: fixed;
+  height: 150px;
+  width: 100%;
+}
+
+.header-title {
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
 .beach-body {
   margin-top: 230px;
   margin-bottom: 20px;
@@ -125,26 +141,6 @@
   border-radius: 15px;
   height: 400px;
 }
-
-/*Header Styling*/
-.header {
-  background-size: cover;
-  background-color: rgba(255,255,255,0.6);
-  overflow: hidden;
-  position: fixed;
-  height: 150px;
-  width: 100%;
-}
-
-.header-title {
-  font-size: 5em;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-
-
-
 
 
 
