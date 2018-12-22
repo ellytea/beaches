@@ -48,6 +48,7 @@ class Beaches extends Component {
     })
   }
 
+  
 
   render () {
     return (
@@ -62,6 +63,7 @@ class Beaches extends Component {
                 <div onClick={this.beachVisibility}
                      className='beach-card'>
                      <h1 className='beach-name'>{beach.name}</h1> 
+                     <h2 className='beach-county'>{beach.county}</h2>
                      <img className='beach-pics' src={beach.image}/>
                 </div>
             )
