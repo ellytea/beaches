@@ -6,6 +6,7 @@ class Beaches extends Component {
   constructor() {
     super();
     this.state = {
+      allBeaches: [],
       beaches: [],
       beachCounties: [],
       beachCard: ''
@@ -18,6 +19,7 @@ class Beaches extends Component {
       .then(data => {
         this.setState({
           beaches: data.beaches,
+          allBeaches: data.beaches
         })
       })
       .catch(error => console.log('error'))
@@ -50,14 +52,19 @@ class Beaches extends Component {
   }
 
   filterByCounty = (e) => {
-    let allBeaches = this.state.beaches 
-    let filteredBeaches = this.state.beaches.filter((beach) => {
+    let filteredBeaches = [];
+
+    this.state.beaches.filter((beach) => {
       if (e.target.value === beach.county) {
-        return beach
-      }
-    })
-    this.setState({
+        filteredBeaches.push(beach)
+        this.setState({
           beaches: filteredBeaches
+        })
+      } else if (e.target.value === 'all-counties') {
+        this.setState({
+          beaches: this.state.allBeaches
+        })
+      }
     })
   }
     
@@ -68,7 +75,7 @@ class Beaches extends Component {
         <h1 className='header-title'>Beachy Keen</h1>
         </header>
         <Filter filterByCounty={this.filterByCounty}
-          beaches={this.state.beaches}/>
+                beachCounties={this.state.beachCounties}/>
         <div className='beach-body'>
         {
           this.state.beaches.map((beach) => {
