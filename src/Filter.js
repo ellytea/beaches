@@ -10,12 +10,12 @@ class Filter extends Component {
     return(
       <div className='filter-dropdown'>
         <select onChange={this.props.filterByCounty}
-          className='filter'
-          placeholder='Filter by County'>
+                className='filter'
+                placeholder='Filter by County'>
         <option className='filter-names' value='all-counties'>All Counties</option>
         {
-          this.props.beaches.map((beach) => {
-            return <option className='filter-names' value={beach.county}>{beach.county}</option>
+          this.props.beachCounties.map((beachCounty) => {
+            return <option className='filter-names' value={beachCounty.name}>{beachCounty.name}</option>
           })
         }
         </select>

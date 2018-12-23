@@ -75,7 +75,7 @@ class Beaches extends Component {
         <h1 className='header-title'>Beachy Keen</h1>
         </header>
         <Filter filterByCounty={this.filterByCounty}
-          beaches={this.state.beaches}/>
+                beachCounties={this.state.beachCounties}/>
         <div className='beach-body'>
         {
           this.state.beaches.map((beach) => {
