@@ -43,7 +43,7 @@
   text-transform: uppercase;
   font-weight: 420;
   font-size: 1.2em;
-  margin-right: 1075px;
+  margin-right: 1095px;
 }
 
 .landing-button:hover {
@@ -54,3 +54,28 @@
 .hide {
   display: none;
 } 
+
+.sun { 
+  margin-left: 201px; 
+  margin-top: 145px;
+  width:70px;
+  height:70px;
+  border-radius:50%;  
+  background: #F9F9E5;
+  opacity:0.9;      
+  box-shadow: 0px 0px 200px 70px #F9F9E5; 
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: glow;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-name: glow;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+    
+@-webkit-keyframes glow {
+    from { box-shadow: 0 0 0px #F9F9E5; }
+    to { box-shadow: 100 100 2000px pink; }
+}
