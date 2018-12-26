@@ -1,3 +1,5 @@
+
+/*
 .App {
   text-align: center;
 }
@@ -64,10 +66,10 @@
   top: 0;
   right: 0;
   overflow: auto;
-}
+}*/
 
 /*Header Styling*/
-.header {
+/*.header {
   background-size: cover;
   background-color: rgba(255,255,255,0.6);
   overflow: hidden;
@@ -118,10 +120,10 @@
   padding: 10px;
   margin: auto;
   width: 90%;
-}
+}*/
 
 /*BeachCard Pop-up Styling*/
-.popup {
+/*.popup {
   background: black;
   border-radius: 15px;
   color: white;
@@ -144,7 +146,7 @@
 
 .filter-dropdown {
   margin-top: 200px;
-}
+}*/
 
 
 

@@ -1,0 +1,56 @@
+@import 'variables';
+
+
+.App {
+  text-align: center;
+}
+
+.landing-page {
+  background-image: url('../images/guard.jpg');
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.landing-headline {
+  color: black;
+  margin-top:35px;
+  font-size: 5em;
+  margin-right: 800px;
+  margin-bottom: 30px;
+  background-color: rgba(254,173,185,0.5);
+}
+
+.landing-subhead {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 450;
+  margin-right: 950px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.landing-button {
+  border: .14em double white;
+  background: none;
+  background-color: rgba(254,173,185,0.1);
+  color: white;
+  text-transform: uppercase;
+  font-weight: 420;
+  font-size: 1.2em;
+  margin-right: 1075px;
+}
+
+.landing-button:hover {
+  color: white;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.hide {
+  display: none;
+} 

@@ -1,0 +1,23 @@
+@import 'variables';
+
+
+.popup {
+  background: black;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  height: 550px;
+  overflow: hidden;
+  position: fixed;
+  padding: 10px;
+  right: calc(50vw - 595px);
+  top: 180px;
+  width: 1200px;
+  z-index: 3;
+}
+
+.popup-img {
+  border-radius: 15px;
+  height: 400px;
+}

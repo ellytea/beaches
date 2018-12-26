@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import BeachesCard from './BeachesCard.js';
 import Filter from './Filter.js';
+import './App.css';
+
 
 class Beaches extends Component {
   constructor() {
@@ -63,7 +65,7 @@ class Beaches extends Component {
       } else if (e.target.value === 'all-counties') {
         this.setState({
           beaches: this.state.allBeaches
-        })
+        })  
       }
     })
   }
