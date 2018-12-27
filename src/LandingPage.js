@@ -27,6 +27,7 @@ class LandingPage extends Component {
             <button className='landing-button' 
               onClick={this.hide}>Find Your Happy Place</button>
           </div>
+          <div className='sun'></div>
         </div>
       );
     } else {
