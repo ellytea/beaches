@@ -28,6 +28,14 @@
   margin-top: 20px;
 }
 
+.header-subhead {
+  font-size: 2em;
+  margin-top: 180px;
+  margin-bottom: 5px;
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 1px;
+}
+
 .beach-body {
   margin-top: 80px;
   margin-bottom: 20px;
@@ -43,6 +51,12 @@
   margin: auto auto 10px auto;
   text-transform: uppercase;
   width: 400px;
+}
+
+.beach-county {
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 1px;
+  
 }
 
 .beach-name:hover {

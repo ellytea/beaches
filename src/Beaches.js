@@ -76,6 +76,7 @@ class Beaches extends Component {
         <header className="header">
         <h1 className='header-title'>Beachy Keen</h1>
         </header>
+        <h2 className='header-subhead'>Explore Southern California's Impeccable Coastline</h2>
         <Filter filterByCounty={this.filterByCounty}
                 beachCounties={this.state.beachCounties}/>
         <div className='beach-body'>
