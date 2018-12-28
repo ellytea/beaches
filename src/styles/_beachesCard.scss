@@ -5,7 +5,7 @@
   background: black;
   border-radius: 15px;
   color: white;
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 550px;
   overflow: hidden;
