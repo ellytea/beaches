@@ -83,7 +83,7 @@ class Beaches extends Component {
           </div>
         </section>
         <section className='filter-section'>
-          <h1 className='filter-headline'></h1>
+          <h1 className='filter-headline'>Filter Your Search</h1>
           <Filter filterByCounty={this.filterByCounty}
                 beachCounties={this.state.beachCounties}/>
         </section>
