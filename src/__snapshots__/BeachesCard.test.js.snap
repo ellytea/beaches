@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BeachesCard should make a card from the beach info 1`] = `
+<div
+  className="popup"
+>
+  <img
+    className="popup-img"
+    src="https://i.imgur.com/VdqbEDr.jpg"
+  />
+  <h1
+    className="popup-name"
+  >
+    Montaña de Oro State Beach
+  </h1>
+  <p
+    className="popup-county"
+  >
+    San Luis Obispo County
+  </p>
+  <ul
+    className="popup-activ"
+  >
+    Activities:
+    <li>
+      Hiking
+    </li>
+    <li>
+      Biking
+    </li>
+    <li>
+      Surfing
+    </li>
+    <li>
+      Horseback Riding
+    </li>
+    <li>
+      Tidepooling
+    </li>
+    <li>
+      Fishing
+    </li>
+    <li>
+      Snorkeling
+    </li>
+    <li>
+      Nature Viewing
+    </li>
+    <li>
+      Wildlife Viewing
+    </li>
+    <li>
+      Photography
+    </li>
+  </ul>
+  <ul
+    className="popup-amen"
+  >
+    Amenities:
+    <li>
+      facilities
+    </li>
+    <li>
+      camping
+    </li>
+  </ul>
+  <button
+    className="pop-btn"
+    onClick={[MockFunction]}
+  >
+    X
+  </button>
+</div>
+`;

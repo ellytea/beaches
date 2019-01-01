@@ -55,9 +55,10 @@
   display: none;
 } 
 
-.sun { 
-  margin-left: 201px; 
-  margin-top: 145px;
+/*.sun { 
+  position: absolute;
+  top: 400px;
+  left: 250px;
   width:70px;
   height:70px;
   border-radius:50%;  
@@ -72,7 +73,7 @@
   animation-name: glow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-}
+}*/
 
     
 @-webkit-keyframes glow {
