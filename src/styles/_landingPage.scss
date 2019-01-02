@@ -76,11 +76,11 @@
   box-shadow: 0px 0px 200px 70px #F9F9E5; 
   -webkit-animation-duration: 3s;
   -webkit-animation-name: glow;
-  -webkit-animation-direction: alternate;
+  -webkit-animation-direction: alternate-reverse;
   -webkit-animation-iteration-count: infinite;
   animation-duration: 3s;
   animation-name: glow;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
 }
 

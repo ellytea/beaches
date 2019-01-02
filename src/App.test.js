@@ -9,8 +9,6 @@ it('renders without crashing', () => {
 });
 
 
-//<App />
 
 
 
-//expect - default state of beaches: false
