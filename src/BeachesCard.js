@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class BeachesCard extends Component {
   constructor(props) {
-    super();
+    super()
   }
 
   render() {

@@ -38,7 +38,6 @@ const beaches = [
     "hours": "6AM-10PM",
     "fire-pits": false,
     "image": "https://i.imgur.com/VdqbEDr.jpg" 
-
   },
   { "name": "Cayucos State Beach",
     "county": "San Luis Obispo County",

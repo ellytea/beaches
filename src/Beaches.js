@@ -24,7 +24,7 @@ class Beaches extends Component {
           allBeaches: data.beaches
         })
       })
-      .catch(error => console.log('error'))
+      .catch(error => console.log('first fetch', error))
 
 
     fetch('https://whateverly-datasets.herokuapp.com/api/v1/beachCounties')
@@ -34,7 +34,7 @@ class Beaches extends Component {
           beachCounties: data.beachCounties,
         })
       })
-      .catch(error => console.log('error'))
+      .catch(error => console.log('second fetch', error))
   }
 
   beachVisibility = (e) => {
@@ -49,7 +49,7 @@ class Beaches extends Component {
 
   closeBeach = (e) => {
     this.setState({
-      beachCard: undefined
+      beachCard: ''
     })
   }
 
@@ -74,19 +74,20 @@ class Beaches extends Component {
     console.log('beach card',this.state.beachCard, 'close beach', this.closeBeach)
     return (
       <div className='beaches-page'>
-        <header className="header">
+        <header className='header'>
         <h1 className='header-title'>Beachy Keen</h1>
         </header>
         <h2 className='header-subhead'>Explore Southern California's Impeccable Coastline</h2>
         <section className='beach-image'>
-          <div class="stacked-image borderbox">
+          <div className='stacked-image borderbox'>
             <img src='https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fimg1.coastalliving.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_inbody_900x506%2Fpublic%2Fimage%2F2016%2F08%2Fmain%2Fpfeiffer-beach-california-607948645.jpg%3Fitok%3DwSIExkKn&w=1600&q=70' width="500" height="400" />
           </div>
+          <p className='arrow'>&#x25BC;</p>
         </section>
         <section className='filter-section'>
           <h1 className='filter-headline'>Filter Your Search</h1>
           <Filter filterByCounty={this.filterByCounty}
-                beachCounties={this.state.beachCounties}/>
+                  beachCounties={this.state.beachCounties}/>
         </section>
         <div className='beach-body'>
         {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { shallow } from 'enzyme';
 import BeachesCard from './BeachesCard.js';
 
@@ -14,17 +13,16 @@ const beach = { "name": "Montaña de Oro State Beach",
     "hours": "6AM-10PM",
     "fire-pits": false,
     "image": "https://i.imgur.com/VdqbEDr.jpg" 
-
   }
 
 describe ('BeachesCard', () => {
   let mountedComponent = shallow(
-    <BeachesCard 
-    selectedBeach = {beach}
-    closeBeach = { jest.fn()}
-    />
+    <BeachesCard selectedBeach = {beach}
+                 closeBeach = { jest.fn()} />
     )
+
   it('should make a card from the beach info', () => {
     expect(mountedComponent).toMatchSnapshot();
   }) 
+
 })
