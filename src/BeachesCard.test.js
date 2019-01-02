@@ -7,7 +7,7 @@ const closeBeachMock = jest.fn();
 describe('BeachesCard', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(
+    wrapper = shallow(
       <BeachesCard closeBeach={closeBeachMock} />
       )
   })

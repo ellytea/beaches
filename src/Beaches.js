@@ -16,7 +16,6 @@ class Beaches extends Component {
   }
 
   componentDidMount(){
-    console.log('lookhere', this.state.beaches)
     fetch('https://whateverly-datasets.herokuapp.com/api/v1/beaches')
       .then(response => response.json())
       .then(data => {
