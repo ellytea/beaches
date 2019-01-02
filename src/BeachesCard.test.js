@@ -1,13 +1,13 @@
 import React from 'react';
 import BeachesCard from './BeachesCard.js';
-import { shallow } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 const closeBeachMock = jest.fn();
 
 describe('BeachesCard', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = shallow(
+    wrapper = mount(
       <BeachesCard closeBeach={closeBeachMock} />
       )
   })

@@ -16,6 +16,7 @@ class Beaches extends Component {
   }
 
   componentDidMount(){
+    console.log('lookhere', this.state.beaches)
     fetch('https://whateverly-datasets.herokuapp.com/api/v1/beaches')
       .then(response => response.json())
       .then(data => {
@@ -24,7 +25,7 @@ class Beaches extends Component {
           allBeaches: data.beaches
         })
       })
-      .catch(error => console.log('error'))
+      .catch(error => console.log('first fetch', error))
 
 
     fetch('https://whateverly-datasets.herokuapp.com/api/v1/beachCounties')
@@ -34,7 +35,7 @@ class Beaches extends Component {
           beachCounties: data.beachCounties,
         })
       })
-      .catch(error => console.log('error'))
+      .catch(error => console.log('second fetch', error))
   }
 
   beachVisibility = (e) => {
@@ -49,7 +50,7 @@ class Beaches extends Component {
 
   closeBeach = (e) => {
     this.setState({
-      beachCard: undefined
+      beachCard: ''
     })
   }
 
@@ -86,7 +87,7 @@ class Beaches extends Component {
         <section className='filter-section'>
           <h1 className='filter-headline'>Filter Your Search</h1>
           <Filter filterByCounty={this.filterByCounty}
-                beachCounties={this.state.beachCounties}/>
+                  beachCounties={this.state.beachCounties}/>
         </section>
         <div className='beach-body'>
         {

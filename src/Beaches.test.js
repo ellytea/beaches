@@ -1,6 +1,6 @@
 import React from 'react';
 import Beaches from './Beaches.js';
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
 
 const beaches = [{ "name": "Montaña de Oro State Beach",
     "county": "San Luis Obispo County",
@@ -48,7 +48,7 @@ describe('Beaches', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = mount(
-      <Beaches key= {beaches}/>
+      <Beaches key= 'Beaches'/>
       )
 })
 
@@ -56,14 +56,9 @@ describe('Beaches', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
-  it('should display beach card when clicked', () => {
-      wrapper.find('.beach-card').simulate('click', { target: {innerText: "Oxnard Beach Park"} });
-      expect(wrapper.state('beachCard')).toEqual(beach);
-  })
-
-  it('should change beachCard state to undefined when clicked', () => {
-      wrapper.find('.pop-btn').simulate('click');
-      expect(wrapper.state('beachCard')).toEqual(undefined);
+  it('should change beachCard state to empty string when clicked', () => {
+      wrapper.find('.beach-body').simulate('click');
+      expect(wrapper.state('beachCard')).toEqual('');
   })
 
   it('should change beaches state to filteredbeaches', () => {

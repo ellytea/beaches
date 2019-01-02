@@ -31,6 +31,11 @@ exports[`Beaches should match the snapshot with all data passed in 1`] = `
           width="500"
         />
       </div>
+      <p
+        className="arrow"
+      >
+        ▼
+      </p>
     </section>
     <section
       className="filter-section"

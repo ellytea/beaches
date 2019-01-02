@@ -1,7 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BeachesCard should match the snapshot with all data passed in 1`] = `
-<div
-  className="none"
-/>
+<BeachesCard
+  closeBeach={[MockFunction]}
+>
+  <div
+    className="none"
+  />
+</BeachesCard>
 `;
