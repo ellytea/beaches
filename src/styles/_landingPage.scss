@@ -19,20 +19,29 @@
 
 .landing-headline {
   color: black;
-  margin-top:35px;
+  margin-top:45px;
   font-size: 5em;
-  margin-right: 800px;
+  margin-right: 710px;
   margin-bottom: 30px;
   background-color: rgba(254,173,185,0.5);
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: #18153C;
+
+
 }
 
 .landing-subhead {
   color: black;
   font-size: 1.5em;
   font-weight: 450;
-  margin-right: 950px;
+  margin-right: 840px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: #18153C;
+  
 }
 
 .landing-button {
@@ -41,9 +50,10 @@
   background-color: rgba(254,173,185,0.1);
   color: white;
   text-transform: uppercase;
-  font-weight: 420;
-  font-size: 1.2em;
-  margin-right: 1095px;
+  font-size: 1.3em;
+  margin-right: 1080px;
+  font-family: 'Shadows Into Light', cursive;
+
 }
 
 .landing-button:hover {
@@ -57,7 +67,7 @@
 
 .sun { 
   margin-left: 201px; 
-  margin-top: 145px;
+  margin-top: 137px;
   width:70px;
   height:70px;
   border-radius:50%;  
