@@ -56,25 +56,25 @@ describe('Beaches', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
-  // it('should display beach card when clicked', () => {
-  //     wrapper.find('.beach-card').simulate('click', { target: {innerText: "Oxnard Beach Park"} });
-  //     expect(wrapper.state('beachCard')).toEqual(beach);
-  // })
+  it('should display beach card when clicked', () => {
+      wrapper.find('.beach-card').simulate('click', { target: {innerText: "Oxnard Beach Park"} });
+      expect(wrapper.state('beachCard')).toEqual(beach);
+  })
 
-  // it('should change beachCard state to undefined when clicked', () => {
-  //     wrapper.find('.pop-btn').simulate('click');
-  //     expect(wrapper.state('beachCard')).toEqual(undefined);
-  // })
+  it('should change beachCard state to undefined when clicked', () => {
+      wrapper.find('.pop-btn').simulate('click');
+      expect(wrapper.state('beachCard')).toEqual(undefined);
+  })
 
-  // it('should change beaches state to filteredbeaches', () => {
-  //     wrapper.find('.filter-names').simulate('change', { target: {value: "Ventura County"} });
-  //     expect(wrapper.state('beaches')).toEqual(beach);
-  // })
+  it('should change beaches state to filteredbeaches', () => {
+      wrapper.find('.filter-names').simulate('change', { target: {value: "Ventura County"} });
+      expect(wrapper.state('beaches')).toEqual(beach);
+  })
 
-  // it('should change beaches state to all beaches', () => {
-  //     wrapper.find('.filter-names').simulate('change', { target: {value: "all-counties"} });
-  //     expect(wrapper.state('beaches')).toEqual(beaches);
-  // })
+  it('should change beaches state to all beaches', () => {
+      wrapper.find('.filter-names').simulate('change', { target: {value: "all-counties"} });
+      expect(wrapper.state('beaches')).toEqual(beaches);
+  })
 
 })
 
