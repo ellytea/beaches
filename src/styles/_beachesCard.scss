@@ -1,16 +1,25 @@
 @import 'variables';
 
+* {
+  font-family: $font;
+  font-size: 20px;
+  color: white;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));*/
+} 
+
 
 .popup {
-  background: black;
+  background: $color-sea;
   border-radius: 15px;
-  color: white;
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  height: 550px;
+  display: grid;
+  grid-template-areas: "img names names btn"
+                       "img activ amen .";
+  grid-template-columns: 50% 2fr 2fr .5fr;
+  grid-template-rows: .5fr 2fr;
+  margin-top: 10%;
   overflow: hidden;
+  padding: 20px;
   position: fixed;
-  padding: 10px;
   right: calc(50vw - 595px);
   top: 180px;
   width: 1200px;
@@ -18,6 +27,55 @@
 }
 
 .popup-img {
-  border-radius: 15px;
-  height: 400px;
+  grid-area: img;
+  width: 100%;
+  background: #fff;
+  -moz-box-sizing: content-box; 
+  -webkit-box-sizing: content-box; 
+  box-sizing: content-box;
+  padding: 10px;
+  width: 90%;
+  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+
 }
+
+.popup-name {
+  color: white;
+  font-size: 30px;
+  grid-area: names;
+  margin: 0;
+}
+
+.popup-county {
+  color: white;
+  font-size: 25px;
+  grid-area: names;
+  margin: 10% 0 0 0;
+
+}
+
+.popup-activ {
+  color: white;
+  margin-left: 10%;
+  grid-area: activ; 
+  text-align: left;
+}
+
+.popup-amen {
+  color: white;
+  margin-left: 10%;
+  grid-area: amen;
+  text-align: left;
+}
+
+.pop-btn {
+  color: $color-sea;
+  position: absolute;
+  right: 10px;
+  grid-area: btn;
+  height: 45%;
+  width: 50%;
+}
+

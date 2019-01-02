@@ -27,8 +27,6 @@
   font-family: sans-serif;
   letter-spacing: 2px;
   color: #18153C;
-
-
 }
 
 .landing-subhead {
@@ -41,7 +39,6 @@
   font-family: sans-serif;
   letter-spacing: 2px;
   color: #18153C;
-  
 }
 
 .landing-button {
@@ -73,8 +70,12 @@
   border-radius:50%;  
   background: #F9F9E5;
   opacity:0.9;      
-  box-shadow: 0px 0px 200px 70px #F9F9E5;
-  animation-duration: 1.5s;
+  box-shadow: 0px 0px 200px 70px #F9F9E5; 
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: glow;
+  -webkit-animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+  animation-duration: 3s;
   animation-name: glow;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
@@ -85,3 +86,6 @@
     from { box-shadow: 0 0 0px #F9F9E5; }
     to { box-shadow: 100 100 2000px pink; }
 }
+
+
+

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
-
 
 class BeachesCard extends Component {
   constructor(props) {
@@ -15,16 +13,16 @@ class BeachesCard extends Component {
     return (
       <div className='popup'>
         <img className='popup-img' src={this.props.selectedBeach.image}/>
-        <h1>{this.props.selectedBeach.name}</h1>
-        <p>{this.props.selectedBeach.county}</p>
-        <ul>Recommended Activities:
+        <h1 className='popup-name' >{this.props.selectedBeach.name}</h1>
+        <p className='popup-county'>{this.props.selectedBeach.county}</p>
+        <ul className='popup-activ'>Activities:
            {
             this.props.selectedBeach.activities.map((activity) => {
               return <li>{activity}</li>
             })
            }
-        </ul>
-        <ul>Amenities:
+         </ul>
+         <ul className='popup-amen'>Amenities:
            {
             beachProps.map((prop) => {
                if (this.props.selectedBeach[prop] === true) {
@@ -33,7 +31,7 @@ class BeachesCard extends Component {
             })
            }
         </ul>
-        <button className='pop-btn' onClick={this.props.closeBeach}>X close</button>
+        <button className='pop-btn' onClick={this.props.closeBeach}>X</button>
       </div>
     )
     }

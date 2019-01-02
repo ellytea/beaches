@@ -71,6 +71,7 @@ class Beaches extends Component {
   }
     
   render () {
+    console.log('beach card',this.state.beachCard, 'close beach', this.closeBeach)
     return (
       <div className='beaches-page'>
         <header className='header'>
