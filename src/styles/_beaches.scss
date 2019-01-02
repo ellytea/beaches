@@ -19,12 +19,13 @@
   background-color: rgba(255,255,255,0.8);
   overflow: hidden;
   position: fixed;
+  z-index: 2;
   height: 150px;
   width: 100%;
 }
 
 .header-title {
-  font-size: 5em;
+  font-size: 4.5em;
   text-transform: uppercase;
   color: #18153C;
   margin-top: 20px;
@@ -68,8 +69,8 @@
 }
 
 .beach-name {
+  font-size: 1em;
   font-family: sans-serif;
-  font-size: 1.5em;
   margin: auto auto 10px auto;
   text-transform: uppercase;
   width: 400px;
@@ -78,6 +79,7 @@
 
 .beach-county {
   font-family: 'Shadows Into Light', cursive;
+  font-size: 1em;
   letter-spacing: 1px;
   color: #18153C;
 }
@@ -85,6 +87,7 @@
 .beach-name:hover {
   filter: drop-shadow(0 0 0.75rem crimson);
   color: white;
+  cursor: pointer;
 }
 
 .beach-pics {
@@ -107,55 +110,61 @@
   align-items: center;
   padding: 10px;
   margin: auto;
+  height: 400px;
   width: 90%;
   background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
 }
 
+
+// Main-Image Styling
 .beach-image {
   margin-top: 30px;
+  position: relative;
+  z-index: 1
 }
 
-.stacked-image {
+.bottom-image {
   position: relative; 
   z-index: 0; 
   margin-bottom: 20px; 
   display: inline-block;
 }
  
-.stacked-image img {
+.bottom-image img {
   background: #fff;
   -moz-box-sizing: content-box; 
   -webkit-box-sizing: content-box; 
   box-sizing: content-box;
-  padding: 10px;
+  padding: 15px;
   width: 100%;
-  -moz-box-shadow:    1px 1px 2px rgba(0,0,0,.25);
-  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-  box-shadow:         1px 1px 2px rgba(0,0,0,.25);
+  -moz-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
+  -webkit-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
+  box-shadow: 2px 2px 1px rgba(0,0,1,.1);
 }
 
-.borderbox img {
+.border img {
   -moz-box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   box-sizing: border-box;
 }
 
 
-.stacked-image:before { 
+.bottom-image:before { 
   background: #f3f3f3;
-  content: ""; 
+  content: "none"; 
   width: 100%; 
   height: 100%; 
   position: absolute; 
   left: 0;
-  top: 0; z-index: -10;
+  top: 0; 
+  z-index: -5;
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);
   -ms-transform: rotate(-2deg);
   -o-transform: rotate(-2deg);
-  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-  box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  -moz-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
+  -webkit-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
+  box-shadow: 2px 2px 1px rgba(0,0,1,.1);
 }
 
 

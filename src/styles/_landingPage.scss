@@ -13,15 +13,15 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 10;
   overflow: hidden;
 }
 
 .landing-headline {
-  color: black;
   margin-top:45px;
-  font-size: 5em;
-  margin-right: 710px;
+  font-size: 4em;
+  padding-left: 45px;
+  margin-right: 700px;
   margin-bottom: 30px;
   background-color: rgba(254,173,185,0.5);
   font-family: sans-serif;
@@ -30,12 +30,11 @@
 }
 
 .landing-subhead {
-  color: black;
-  font-size: 1.5em;
-  font-weight: 450;
-  margin-right: 840px;
-  margin-top: 10px;
+  font-size: 1.3em;
+  font-weight: 550;
+  margin-right: 715px;
   margin-bottom: 13px;
+  padding-left: 50px;
   font-family: sans-serif;
   letter-spacing: 2px;
   color: #18153C;
@@ -47,15 +46,15 @@
   background-color: rgba(254,173,185,0.1);
   color: white;
   text-transform: uppercase;
-  font-size: 1.3em;
-  margin-right: 1080px;
+  font-size: 1.1em;
+  margin: 2px 20px 0px 50px;
   font-family: 'Shadows Into Light', cursive;
-
 }
 
 .landing-button:hover {
   color: white;
   filter: drop-shadow(0 0 0.75rem crimson);
+  cursor: pointer;
 }
 
 .hide {
@@ -63,27 +62,24 @@
 } 
 
 .sun { 
-  margin-left: 201px; 
-  margin-top: 137px;
-  width:70px;
-  height:70px;
+  margin-left: 211px; 
+  margin-top: 148px;
+  width:50px;
+  height:50px;
   border-radius:50%;  
-  background: #F9F9E5;
-  opacity:0.9;      
-  box-shadow: 0px 0px 200px 70px #F9F9E5; 
+  background: white;
+  opacity:0.4;      
+  box-shadow: 0px 0px 200px 70px pink; 
   -webkit-animation-duration: 3s;
   -webkit-animation-name: glow;
   -webkit-animation-direction: alternate-reverse;
   -webkit-animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-name: glow;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
 }
+
 
     
 @-webkit-keyframes glow {
-    from { box-shadow: 0 0 0px #F9F9E5; }
+    from { box-shadow: 0 0 0px yellow; }
     to { box-shadow: 100 100 2000px pink; }
 }
 
