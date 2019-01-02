@@ -18,10 +18,9 @@
 }
 
 .landing-headline {
-  color: black;
   margin-top:45px;
   font-size: 4em;
-  margin-right: 720px;
+  margin-right: 600px;
   margin-bottom: 30px;
   background-color: rgba(254,173,185,0.5);
   font-family: sans-serif;
@@ -33,7 +32,7 @@
   color: black;
   font-size: 1.3em;
   font-weight: 550;
-  margin-right: 815px;
+  margin-right: 715px;
   margin-top: 10px;
   margin-bottom: 13px;
   font-family: sans-serif;
@@ -50,12 +49,12 @@
   font-size: 1.1em;
   margin-right: 1085px;
   font-family: 'Shadows Into Light', cursive;
-
 }
 
 .landing-button:hover {
   color: white;
   filter: drop-shadow(0 0 0.75rem crimson);
+  cursor: pointer;
 }
 
 .hide {
@@ -80,6 +79,7 @@
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
+
 
     
 @-webkit-keyframes glow {

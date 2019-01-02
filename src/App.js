@@ -8,6 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      landingPage: true,
       Beaches: false,
       Maps: false,
     };
@@ -17,22 +18,33 @@ class App extends Component {
   renderMain = (event) => {
     const section = event.target.classList[0];
     this.setState({
-      Beaches: true,
+      Beaches: false,
       Maps: false,
-      [section]: false
+      [section]: true
     });
   }
 
+  exitLandingPage = () => {
+    this.setState({
+      Beaches: true,
+      landingPage: false
+    })
+  }
+
   render() {
+    if (this.state.landingPage) {
+      return ( 
+        <LandingPage renderBeaches={this.exitLandingPage}  />
+      )
+    }
     return (
       <div className="App">
-        <LandingPage renderBeaches={this.renderMain} />
         <nav className="main-nav">
           <div className="nav-buttons">
-            <button className='Beach nav-button' 
+            <button className='Beaches nav-button' 
               onClick={this.renderMain}>BEACHES</button>
             <button className='Maps nav-button' 
-              onClick={this.renderMain}>MAPS</button>
+              onClick={this.renderMain}>COUNTY MAPS</button>
           </div>
         </nav>
         {

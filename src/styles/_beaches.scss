@@ -19,6 +19,7 @@
   background-color: rgba(255,255,255,0.8);
   overflow: hidden;
   position: fixed;
+  z-index: 2;
   height: 150px;
   width: 100%;
 }
@@ -80,6 +81,7 @@
 .beach-name:hover {
   filter: drop-shadow(0 0 0.75rem crimson);
   color: white;
+  cursor: pointer;
 }
 
 .beach-pics {
@@ -107,8 +109,12 @@
   background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
 }
 
+
+// Main-Image Styling
 .beach-image {
   margin-top: 30px;
+  position: relative;
+  z-index: 1
 }
 
 .stacked-image {

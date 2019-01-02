@@ -1,19 +1,97 @@
 @import 'variables';
 
 .nav-button {
-  background: transparent;
   border: none;
+  background: transparent;
   display: inline-block;
   color: black;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 200px;
+  margin-top: 120px;
   width: 152px;
-  float: right;
+  float: center;
   z-index: 10;
+  position: relative;
 
   &:hover {
     cursor: pointer; 
+    color: white;
+    filter: drop-shadow(0 0 0.75rem crimson);
   }
 }
+
+.maps-page {
+  background-image: url('../images/tiny.jpg');
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.maps-body {
+  margin-top: 380px;
+  margin-bottom: 20px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 50px;
+  width: 100%;
+}
+
+.map {
+  background: rgba(255,255,255,0.76);
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+  height: 780px;
+   -moz-box-sizing: content-box; 
+  -webkit-box-sizing: content-box; 
+  box-sizing: content-box;
+  padding: 10px;
+  width: 80%;
+  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+  box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+}
+
+
+// Individual Map Styling
+.map-slo-image {
+  background-image: url('../images/slo.png');
+  background-size: cover;
+  box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+}
+
+.map-sd-image {
+  background-image: url('../images/sd.png');
+  background-size: cover;
+}
+
+.map-santabarbara-image {
+  background-image: url('../images/sb.png');
+  background-size: cover;
+}
+
+
+.map-orange-image {
+  background-image: url('../images/orange.png');
+  background-size: cover;
+}
+
+.map-ventura-image {
+  background-image: url('../images/ventura.png');
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
