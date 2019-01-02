@@ -4,10 +4,24 @@ exports[`Beaches should match the snapshot with all data passed in 1`] = `
 <div
   className="beaches-page"
 >
+  <header
+    className="header"
+  >
+    <h1
+      className="header-title"
+    >
+      Beachy Keen
+    </h1>
+  </header>
+  <Filter
+    beachCounties={Array []}
+    filterByCounty={[Function]}
+  />
   <div
     className="beach-body"
   />
   <BeachesCard
+    closeBeach={[Function]}
     selectedBeach=""
   />
 </div>

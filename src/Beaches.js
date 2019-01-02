@@ -73,7 +73,7 @@ class Beaches extends Component {
   render () {
     return (
       <div className='beaches-page'>
-        <header className="header">
+        <header className='header'>
         <h1 className='header-title'>Beachy Keen</h1>
         </header>
         <Filter filterByCounty={this.filterByCounty}

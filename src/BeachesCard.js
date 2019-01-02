@@ -4,7 +4,7 @@ import './App.css';
 
 class BeachesCard extends Component {
   constructor(props) {
-    super();
+    super()
   }
 
   render() {
@@ -23,8 +23,8 @@ class BeachesCard extends Component {
               return <li>{activity}</li>
             })
            }
-         </ul>
-         <ul>Amenities:
+        </ul>
+        <ul>Amenities:
            {
             beachProps.map((prop) => {
                if (this.props.selectedBeach[prop] === true) {
