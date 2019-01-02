@@ -55,6 +55,15 @@
   display: none;
 } 
 
+ /*There are going to be too meny media queries 
+ just for the sun and it only works if the
+ page is exactly the right size and it is so
+ subtle that most people only notice it if its
+ out of place. I say we leave it out. If someone
+ else to fight for it and do all the media queries
+ for it they can. But I don't want to put energy
+ into that.*/
+
 /*.sun { 
   position: absolute;
   top: 400px;
@@ -80,3 +89,4 @@
     from { box-shadow: 0 0 0px #F9F9E5; }
     to { box-shadow: 100 100 2000px pink; }
 }
+
