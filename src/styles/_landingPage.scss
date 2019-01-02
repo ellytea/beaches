@@ -1,6 +1,5 @@
 @import 'variables';
 
-
 .App {
   text-align: center;
 }
@@ -10,45 +9,66 @@
   background-size: cover;
   bottom: 0;
   left: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
   overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.landing-details-section {
+  display: grid;
+  grid-template-areas: "head"
+                       "sub"
+                       "btn";
+  grid-template-rows: repeat(3, 20%);
+  grid-template-columns: 1fr; 
+  height: 66%;
+  margin-top: 10%;
+  min-width: 760px;
+  width: 66%;
 }
 
 .landing-headline {
+  background-color: $color-ltcoral;
   color: black;
-  margin-top:35px;
   font-size: 5em;
-  margin-right: 800px;
-  margin-bottom: 30px;
-  background-color: rgba(254,173,185,0.5);
+  grid-area: head;
+  justify-self: center;
+  margin: 0;
+  width: 100%;
 }
 
 .landing-subhead {
   color: black;
   font-size: 1.5em;
   font-weight: 450;
-  margin-right: 950px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  grid-area: sub; 
+  justify-self: center;
+  margin: 0;
+  padding-top: 5%;
 }
 
 .landing-button {
-  border: .14em double white;
+  background-color: $color-ltcoral;
   background: none;
-  background-color: rgba(254,173,185,0.1);
+  border: .14em double white;
   color: white;
-  text-transform: uppercase;
-  font-weight: 420;
+  filter: drop-shadow(0 0 0.75rem crimson);
   font-size: 1.2em;
-  margin-right: 1095px;
+  grid-area: btn;
+  justify-self: center;
+  height: 25%;
+  margin: 0;
+  min-height: 1.5em;
+  text-transform: uppercase;
+  width: 50%;
 }
 
 .landing-button:hover {
-  color: white;
-  filter: drop-shadow(0 0 0.75rem crimson);
+  border: .14em double $color-coral;
+  color: $color-ltcoral; 
+  filter: none;
 }
 
 .hide {
@@ -88,5 +108,15 @@
 @-webkit-keyframes glow {
     from { box-shadow: 0 0 0px #F9F9E5; }
     to { box-shadow: 100 100 2000px pink; }
+}
+
+@media(max-width: 608px) {
+  .landing-details-section {
+    min-width: 0px;
+    width: 100%;
+}
+ .landing-headline {
+    color: teal;
+  }
 }
 
