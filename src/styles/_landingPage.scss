@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 .App {
   text-align: center;
 }
@@ -9,85 +10,61 @@
   background-size: cover;
   bottom: 0;
   left: 0;
-  overflow: hidden;
   position: absolute;
-  right: 0;
   top: 0;
-  z-index: 1;
-}
-
-.landing-details-section {
-  display: grid;
-  grid-template-areas: "head"
-                       "sub"
-                       "btn";
-  grid-template-rows: repeat(3, 20%);
-  grid-template-columns: 1fr; 
-  height: 66%;
-  margin-top: 10%;
-  min-width: 760px;
-  width: 66%;
+  right: 0;
+  z-index: 3;
+  overflow: hidden;
 }
 
 .landing-headline {
-  background-color: $color-ltcoral;
   color: black;
+  margin-top:45px;
   font-size: 5em;
-  grid-area: head;
-  justify-self: center;
-  margin: 0;
-  width: 100%;
+  margin-right: 710px;
+  margin-bottom: 30px;
+  background-color: rgba(254,173,185,0.5);
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: #18153C;
 }
 
 .landing-subhead {
   color: black;
   font-size: 1.5em;
   font-weight: 450;
-  grid-area: sub; 
-  justify-self: center;
-  margin: 0;
-  padding-top: 5%;
+  margin-right: 840px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  color: #18153C;
 }
 
 .landing-button {
-  background-color: $color-ltcoral;
-  background: none;
   border: .14em double white;
+  background: none;
+  background-color: rgba(254,173,185,0.1);
   color: white;
-  filter: drop-shadow(0 0 0.75rem crimson);
-  font-size: 1.2em;
-  grid-area: btn;
-  justify-self: center;
-  height: 25%;
-  margin: 0;
-  min-height: 1.5em;
   text-transform: uppercase;
-  width: 50%;
+  font-size: 1.3em;
+  margin-right: 1080px;
+  font-family: 'Shadows Into Light', cursive;
+
 }
 
 .landing-button:hover {
-  border: .14em double $color-coral;
-  color: $color-ltcoral; 
-  filter: none;
+  color: white;
+  filter: drop-shadow(0 0 0.75rem crimson);
 }
 
 .hide {
   display: none;
 } 
 
- /*There are going to be too meny media queries 
- just for the sun and it only works if the
- page is exactly the right size and it is so
- subtle that most people only notice it if its
- out of place. I say we leave it out. If someone
- else to fight for it and do all the media queries
- for it they can. But I don't want to put energy
- into that.*/
-
-/*.sun { 
-  position: absolute;
-  top: 400px;
-  left: 250px;
+.sun { 
+  margin-left: 201px; 
+  margin-top: 137px;
   width:70px;
   height:70px;
   border-radius:50%;  
@@ -102,7 +79,7 @@
   animation-name: glow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-}*/
+}
 
     
 @-webkit-keyframes glow {
@@ -110,13 +87,5 @@
     to { box-shadow: 100 100 2000px pink; }
 }
 
-@media(max-width: 608px) {
-  .landing-details-section {
-    min-width: 0px;
-    width: 100%;
-}
- .landing-headline {
-    color: teal;
-  }
-}
+
 

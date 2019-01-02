@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './styles/main.scss';
 import Beaches from './Beaches.js'
 import LandingPage from './LandingPage.js';
 
