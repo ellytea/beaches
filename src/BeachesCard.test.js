@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 
 const closeBeachMock = jest.fn();
 
-describe('Beaches', () => {
+describe('BeachesCard', () => {
   let wrapper;
   beforeEach(() => {
     wrapper = shallow(

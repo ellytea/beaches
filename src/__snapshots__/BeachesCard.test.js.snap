@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Beaches should match the snapshot with all data passed in 1`] = `
+exports[`BeachesCard should match the snapshot with all data passed in 1`] = `
 <div
   className="none"
 />
