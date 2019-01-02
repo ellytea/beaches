@@ -14,16 +14,11 @@ class Maps extends Component {
           <h1 className='header-title'>Beachy Keen</h1>
         </header>
         <div className='maps-body'>
-            <section className='map map-slo-image'>
-            </section>
-            <section className='map map-sd-image'>
-            </section>
-            <section className='map map-santabarbara-image'>
-            </section>
-            <section className='map map-orange-image'>
-            </section> 
-            <section className='map map-ventura-image'>
-            </section>                        
+            <section className='map map-slo-image'></section>
+            <section className='map map-sd-image'></section>
+            <section className='map map-santabarbara-image'></section>
+            <section className='map map-orange-image'></section> 
+            <section className='map map-ventura-image'></section>                        
           </div>
         </div>
     )

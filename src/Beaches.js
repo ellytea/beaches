@@ -79,7 +79,7 @@ class Beaches extends Component {
         </header>
         <h2 className='header-subhead'>Explore Southern California's Impeccable Coastline</h2>
         <section className='beach-image'>
-          <div className="stacked-image borderbox">
+          <div className="bottom-image border">
             <img src='https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fimg1.coastalliving.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_inbody_900x506%2Fpublic%2Fimage%2F2016%2F08%2Fmain%2Fpfeiffer-beach-california-607948645.jpg%3Fitok%3DwSIExkKn&w=1600&q=70' width="500" height="400" />
           </div>
         </section>
