@@ -27,23 +27,31 @@
 .header-title {
   font-size: 4.5em;
   text-transform: uppercase;
-  color: #18153C;
+  color: $color-sea;
   margin-top: 20px;
   font-family: sans-serif;
   letter-spacing: 2px;
 }
 
 .header-subhead {
-  font-size: 2em;
   margin-top: 180px;
   font-family: $cursive-font;
   letter-spacing: 1px;
   color: #18153C;
+  font-size: 35px;
+}
+
+.scroll-down {
+  font-size: .9em;
+  font-family: $cursive-font;
+  margin: 0px;
+  color: $color-sea;
 }
 
 .arrow {
-  font-size: 40px;
-  color: #18153C;
+  font-size: 37px;
+  color: $color-sea;
+  margin: 0px;
 }
 
 
@@ -125,14 +133,6 @@
   margin-top: 30px;
   position: relative;
   z-index: 1;
-}
-
-.arrow {
-  margin: 10px;
-}
-
-.header-subhead {
-  font-size: 35px;
 }
 
 .bottom-image {
