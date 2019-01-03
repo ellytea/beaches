@@ -1,10 +1,8 @@
-# Beach Keen 
+# Beachy Keen 
 
-The ultimate beach hunting guide to southern California. Other California beach sites feel clunky and uninviting. Beachy keen makes streamlined organization and beach pictures the star of the show. You can filter you beaches by county or pick individual beaches to examine in our easy to use application. 
+The ultimate beach hunting guide to Southern California. Other California beach sites feel clunky and uninviting. Beachy Keen makes streamlined organization and beach pictures the star of the show. You can filter your beaches by county or pick individual beaches to examine in our easy to use application. 
 
 ## Set-up
-
-Set Up - Front-end
 
 Clone this repo git@github.com:libbyeh/beaches.git  
 
@@ -28,10 +26,6 @@ https://libbyeh.github.io/beaches/.
 ## Wire Frame
 ![beaches wire fram splash screen](https://user-images.githubusercontent.com/41968928/50186238-72472480-02d7-11e9-9ba9-0484f9f75ba8.jpg)
 ![beachy keen wire frame](https://user-images.githubusercontent.com/41968928/50248472-6c654800-0398-11e9-80a7-7e8ab767ba59.jpg)
-
-## Reflection
-Beachy Keen was a great application to dip our toes in the waters of react. 
-
 
 ## Contributors 
 
