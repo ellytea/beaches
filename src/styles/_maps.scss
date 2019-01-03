@@ -23,7 +23,7 @@
 }
 
 .maps-page {
-  background-image: url('../images/alex.jpg');
+  background-image: url('../images/pink.jpg');
   background-size: cover;
   bottom: 0;
   left: 0;
@@ -33,23 +33,36 @@
   overflow: auto;
 }
 
+.maps-subhead {
+  margin-top: 150px;
+}
+
 .maps-details {
-  margin-top: 200px;
-  color: white;
+  font-family: $cursive-font ;
+  letter-spacing: .8px;
+  color: $color-sea;
+  font-size: 35px;
+  display: inline-block;
+}
+
+.fa-map-marker-alt {
+  font-size: 2em;
+  display: inline-block;
+  padding: 15px;
+  color: $color-sea;
 }
 
 .maps-body {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 25px;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 50px;
+  grid-gap: 80px;
   width: 100%;
 }
 
 .map {
-  background: rgba(255,255,255,0.76);
   margin: auto;
   height: 400px;
   width: 620px;
@@ -57,15 +70,21 @@
   border: 15px solid white;
 }
 
+.title {
+  width: 46.5%;
+  height: 68px;
+  padding-top: 5px;
+  font-size: 1.5em;
+  margin: 0px 385px -99px;
+  position: relative;
+  z-index: 2;
+  background-color: $color-sea;
+  font-family: $cursive-font;
+  color: white;
+}
+
 
 // Individual Map Styling
-.map-cal {
-  background-image: url('../images/socalmap.png');
-  background-size: cover;
-  height: 600px;
-  width: 620px;
-
-}
 .map-slo-image {
   background-image: url('../images/slo.png');
   background-size: cover;
@@ -74,7 +93,6 @@
 .map-sd-image {
   background-image: url('../images/sd.png');
   background-size: cover;
-
 }
 
 .map-santabarbara-image {
@@ -91,6 +109,13 @@
 .map-ventura-image {
   background-image: url('../images/ventura.png');
   background-size: cover;  
+}
+
+.map-la-image {
+  background-image: url('../images/la.png');
+  background-size: cover; 
+  height: 600px;
+  width: 620px; 
 }
 
 
