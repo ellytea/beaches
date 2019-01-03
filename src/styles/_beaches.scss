@@ -1,184 +1,175 @@
 @import 'variables';
 
+* {
+  color: $color-sea;
+  font-family: $font;
+  font-size: 20px;
+}
+
+.App {
+  text-align: center;
+}
 
 .beaches-page {
   background-image: url('../images/pink.jpg');
   background-size: cover;
   bottom: 0;
   left: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
   overflow: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /*Header Styling*/
+
 .header {
-  background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
+  background-color: $color-ltcream;
+  background-image: $pattern;
   background-size: cover;
-  background-color: rgba(255,255,255,0.8);
+  height: 150px;
   overflow: hidden;
   position: fixed;
-  z-index: 2;
-  height: 150px;
   width: 100%;
+  z-index: 2;
 }
 
 .header-title {
-  font-size: 4.5em;
-  text-transform: uppercase;
-  color: #18153C;
-  margin-top: 20px;
   font-family: sans-serif;
+  font-size: 4.5em;
   letter-spacing: 2px;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .header-subhead {
-  font-size: 2em;
+  font-family: $cursive-font;
+  font-size: 35px;
+  letter-spacing: 1px;
   margin-top: 180px;
-  font-family: $cursive-font;
-  letter-spacing: 1px;
-  color: #18153C;
-}
-
-.arrow {
-  font-size: 40px;
-  color: #18153C;
-}
-
-
-// Filter Styling
-.filter-headline {
-  font-family: $cursive-font;
-  letter-spacing: 1px;
-  font-size: 2em;
-  color: #18153C;
-  margin-top: 150px;
-}
-
-
-/*Body Styling*/
-.beach-body {
-  margin-top: 80px;
-  margin-bottom: 20px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  width: 100%;
-}
-
-.beach-name {
-  font-size: 1em;
-  font-family: sans-serif;
-  margin: auto auto 10px auto;
-  text-transform: uppercase;
-  width: 400px;
-  color: #18153C;
-}
-
-.beach-county {
-  font-family: $cursive-font;
-  font-size: 1em;
-  letter-spacing: 1px;
-  color: #18153C;
-}
-
-.beach-name:hover {
-  filter: drop-shadow(0 0 0.75rem crimson);
-  color: white;
-  cursor: pointer;
-}
-
-.beach-pics {
-  margin: auto;
-  height: 230px;
-  background: #fff;
-  -moz-box-sizing: content-box; 
-  -webkit-box-sizing: content-box; 
-  box-sizing: content-box;
-  padding: 10px;
-  width: 90%;
-  -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-  -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-  box-shadow: 1px 1px 2px rgba(0,0,0,.25);
-}
-
-.beach-card {
-  background: rgba(255,255,255,0.76);
-  border-radius: 15px;
-  align-items: center;
-  padding: 10px;
-  margin: auto;
-  height: 400px;
-  width: 90%;
-  background-image: url("https://www.transparenttextures.com/patterns/grey-sandbag.png");
-}
-
-.filter {
-  color: black;
 }
 
 /*Main-Image Styling*/
+
 .beach-image {
   margin-top: 30px;
   position: relative;
   z-index: 1
 }
 
-.arrow {
-  margin: 10px;
-}
-
-.header-subhead {
-  font-size: 35px;
-}
-
 .bottom-image {
+  display: inline-block;
+  margin-bottom: 20px; 
   position: relative; 
   z-index: 0; 
-  margin-bottom: 20px; 
-  display: inline-block;
 }
- 
-.bottom-image img {
-  background: #fff;
-  -moz-box-sizing: content-box; 
-  -webkit-box-sizing: content-box; 
-  box-sizing: content-box;
-  padding: 15px;
-  width: 100%;
-  -moz-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
-  -webkit-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
-  box-shadow: 2px 2px 1px rgba(0,0,1,.1);
-}
-
-.border img {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  box-sizing: border-box;
-}
-
 
 .bottom-image:before { 
   background: #f3f3f3;
+  box-shadow: $shadow-value;
   content: "none"; 
-  width: 100%; 
   height: 100%; 
-  position: absolute; 
   left: 0;
+  -moz-box-shadow: $shadow-value;
+  -moz-transform: $transform-value;
+  -ms-transform: $transform-value;
+  -o-transform: $transform-value;
+  position: absolute; 
   top: 0; 
+  -webkit-box-shadow: $shadow-value;
+  -webkit-transform: $transform-value;
+  width: 100%; 
   z-index: -5;
-  -webkit-transform: rotate(-2deg);
-  -moz-transform: rotate(-2deg);
-  -ms-transform: rotate(-2deg);
-  -o-transform: rotate(-2deg);
-  -moz-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
-  -webkit-box-shadow: 2px 2px 1px rgba(0,0,1,.1);
-  box-shadow: 2px 2px 1px rgba(0,0,1,.1);
 }
 
+.bottom-image img {
+  background: #fff;
+  box-shadow: $shadow-value;
+  box-sizing: content-box;
+  -moz-box-shadow: $shadow-value;
+  -moz-box-sizing: content-box; 
+  padding: 15px;
+  -webkit-box-shadow: $shadow-value;
+  -webkit-box-sizing: content-box; 
+  width: 100%;
+}
 
+.border img {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+}
 
+.arrow {
+  font-size: 40px;
+  margin: 10px;
+}
 
+/*Filter Styling*/
 
+.filter {
+  color: black;
+}
+
+.filter-headline {
+  font-family: $cursive-font;
+  font-size: 2em;
+  letter-spacing: 1px;
+  margin-top: 150px;
+}
+
+/*Body Styling*/
+
+.beach-card {
+  align-items: center;
+  background: $color-ltcream;
+  background-image: $pattern;
+  border-radius: 15px;
+  height: 400px;
+  margin: auto;
+  padding: 10px;
+  width: 90%;
+}
+
+.beach-body {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin: 80px 0px 20px 0px;
+  width: 100%;
+}
+
+.beach-name {
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: auto auto 10px auto;
+  text-transform: uppercase;
+  width: 400px;
+}
+
+.beach-name:hover {
+  color: white;
+  cursor: pointer;
+  filter: $dropshadow-pink;
+}
+
+.beach-county {
+  font-family: $cursive-font;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+.beach-pics {
+  background: #fff;
+  box-shadow: $shadow-value;
+  box-sizing: content-box;
+  height: 230px;
+  margin: auto;
+  -moz-box-shadow: $shadow-value;
+  -moz-box-sizing: content-box; 
+  padding: 10px;
+  -webkit-box-shadow: $shadow-value;
+  -webkit-box-sizing: content-box; 
+  width: 90%;
+}
