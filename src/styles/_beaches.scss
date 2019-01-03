@@ -36,7 +36,7 @@
 .header-subhead {
   font-size: 2em;
   margin-top: 180px;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $cursive-font;
   letter-spacing: 1px;
   color: #18153C;
 }
@@ -49,7 +49,7 @@
 
 // Filter Styling
 .filter-headline {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $cursive-font;
   letter-spacing: 1px;
   font-size: 2em;
   color: #18153C;
@@ -78,7 +78,7 @@
 }
 
 .beach-county {
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $cursive-font;
   font-size: 1em;
   letter-spacing: 1px;
   color: #18153C;
