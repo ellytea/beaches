@@ -7,6 +7,3 @@ it('renders landing page', () => {
   ReactDOM.render(<LandingPage />, div);
 });
 
-
-
-// expect - default state of landingPage: true

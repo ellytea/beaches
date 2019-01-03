@@ -14,7 +14,7 @@ class LandingPage extends Component {
     this.props.renderBeaches(event);
     this.setState({
       landingPage: false
-    });
+    })
   }
 
   render() {
