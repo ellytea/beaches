@@ -19,17 +19,17 @@ const beach = { "name": "Montaña de Oro State Beach",
 const closeMock = jest.fn();
 
 describe ('BeachesCard', () => {
-  let mountedComponent = shallow(
+  let wrapper = shallow(
     <BeachesCard selectedBeach = {beach}
                  closeBeach = {closeMock} />
     )
 
   it('should make a card from the beach info', () => {
-    expect(mountedComponent).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   })
 
-  it('should change beachCard state to empty string when clicked', () => {
-      mountedComponent.find('.pop-btn').simulate('click');
+  it('should invoke closeBeach when clicked', () => {
+      wrapper.find('.pop-btn').simulate('click');
       expect(closeMock).toBeCalled();
   })
 

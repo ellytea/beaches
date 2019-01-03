@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     if (this.state.landingPage) {
       return ( 
-        <LandingPage renderBeaches={this.exitLandingPage}  />
+        <LandingPage renderBeaches={this.exitLandingPage} />
       )
     }
     return (

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter should match the snapshot with all data passed in 1`] = `
+<div
+  className="filter-dropdown"
+>
+  <select
+    className="filter"
+    onChange={[MockFunction]}
+    placeholder="Filter by County"
+  >
+    <option
+      className="filter-names"
+      value="all-counties"
+    >
+      All Counties
+    </option>
+    <option
+      className="filter-names"
+      value="San Luis Obispo County"
+    >
+      San Luis Obispo County
+    </option>
+  </select>
+</div>
+`;
