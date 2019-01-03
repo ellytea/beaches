@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import LandingPage from './LandingPage'
 import { shallow } from 'enzyme'
 
@@ -11,7 +10,7 @@ describe ('LandingPage', () => {
     )
 
 
-  it('should change beachCard state to empty string when clicked', () => {
+  it('should change landingPage state to false when clicked', () => {
         wrapper.find('.landing-button').simulate('click');
         expect(wrapper.state('landingPage')).toEqual(false);
     })
