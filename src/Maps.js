@@ -13,12 +13,35 @@ class Maps extends Component {
         <header className="header">
           <h1 className='header-title'>Beachy Keen</h1>
         </header>
+        <section className='maps-subhead'>
+          <i class="fas fa-map-marker-alt"></i>
+          <h1 className='maps-details'>Find a Beach</h1>
+        </section>
         <div className='maps-body'>
-            <section className='map map-slo-image'></section>
-            <section className='map map-sd-image'></section>
-            <section className='map map-santabarbara-image'></section>
-            <section className='map map-orange-image'></section> 
-            <section className='map map-ventura-image'></section>                        
+            <section>
+              <h1 className='title'>San Luis Obispo County</h1>
+              <div className='map map-slo-image'></div>
+            </section>
+            <section>
+              <h1 className='title'>Santa Barbara County</h1>
+              <div className='map map-santabarbara-image'></div>
+            </section>
+            <section>
+              <h1 className='title'>Los Angelos County</h1>
+              <div className='map map-la-image'></div>
+            </section>
+            <section>
+              <h1 className='title'>Orange County</h1>
+              <div className='map map-orange-image'></div>
+            </section> 
+            <section>
+              <h1 className='title'>San Diego County</h1>
+              <div className='map map-sd-image'></div>
+            </section>
+            <section> 
+              <h1 className='title'>Ventura County</h1>
+              <div className='map map-ventura-image'></div>
+            </section>                        
           </div>
         </div>
     )

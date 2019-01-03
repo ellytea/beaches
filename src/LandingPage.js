@@ -4,14 +4,14 @@ import './App.css';
 
 class LandingPage extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       landingPage: true
-    };
+    }
   }
   
   hide = (event) => {
-    this.props.renderBeaches(event);
+    this.props.renderBeaches(event)
     this.setState({
       landingPage: false
     })
@@ -29,11 +29,11 @@ class LandingPage extends Component {
           </div>
           <div className='sun'></div>
         </div>
-      );
+      )
     } else {
       return (
         <div className='none'></div>
-      );
+      )
     }
   } 
 }

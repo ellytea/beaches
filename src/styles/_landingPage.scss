@@ -35,11 +35,12 @@
 .landing-button {
   background-color: $color-ltcoral;
   background: none;
-  border: .14em double white;
+  border: 3px solid white;
   color: white;
   font-family: $cursive-font;
   font-size: 1.1em;
   margin: 2px 20px 0px 50px;
+  padding: 0px 4px 0px 4px;
   text-transform: uppercase;
 }
 
@@ -49,19 +50,18 @@
   filter: $dropshadow-pink;
 }
 
-.sun { 
-  background: white;
-  border-radius:50%;  
-  box-shadow: 0px 0px 200px 70px pink; 
-  height:50px;
-  margin: 148px 0px 0px 211px;
-  opacity:0.4;  
-  -webkit-animation-direction: alternate-reverse;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: glow;    
-  width:50px;
-
+.sun {
+ background: white;
+ border-radius:50%;
+ box-shadow: 0px 0px 200px 70px pink;
+ height:50px;
+ margin: 148px 0px 0px 211px;
+ opacity:0.4;
+ -webkit-animation-direction: alternate-reverse;
+ -webkit-animation-duration: 3s;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-name: glow;
+ width:50px;
 }
 
 .hide {

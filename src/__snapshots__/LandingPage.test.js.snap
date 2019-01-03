@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingPage should match the snapshot with all data passed in 1`] = `
+<div
+  className="landing-page"
+>
+  <div
+    className="landing-details-section"
+  >
+    <h1
+      className="landing-headline"
+    >
+      BEACHY KEEN
+    </h1>
+    <p
+      className="landing-subhead"
+    >
+      SOUTHERN CALIFORNIA BEACHES
+    </p>
+    <button
+      className="landing-button"
+      onClick={[Function]}
+    >
+      Find Your Happy Place
+    </button>
+  </div>
+  <div
+    className="sun"
+  />
+</div>
+`;

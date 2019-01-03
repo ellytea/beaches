@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     if (this.state.landingPage) {
       return ( 
-        <LandingPage renderBeaches={this.exitLandingPage}  />
+        <LandingPage renderBeaches={this.exitLandingPage} />
       )
     }
     return (
@@ -44,7 +44,7 @@ class App extends Component {
             <button className='Beaches nav-button' 
               onClick={this.renderMain}>BEACHES</button>
             <button className='Maps nav-button' 
-              onClick={this.renderMain}>COUNTY MAPS</button>
+              onClick={this.renderMain}>MAPS</button>
           </div>
         </nav>
         {

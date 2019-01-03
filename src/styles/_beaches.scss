@@ -31,10 +31,11 @@
   overflow: hidden;
   position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header-title {
+  color: $color-sea;
   font-family: sans-serif;
   font-size: 4.5em;
   letter-spacing: 2px;
@@ -100,9 +101,17 @@
   -webkit-box-sizing: border-box; 
 }
 
+.scroll-down {
+  font-size: .9em;
+  font-family: $cursive-font;
+  margin: 0px;
+  color: $color-sea;
+}
+
 .arrow {
-  font-size: 40px;
-  margin: 10px;
+  font-size: 37px;
+  color: $color-sea;
+  margin: 0px;
 }
 
 /*Filter Styling*/
@@ -115,7 +124,7 @@
   font-family: $cursive-font;
   font-size: 2em;
   letter-spacing: 1px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 /*Body Styling*/
@@ -135,7 +144,6 @@
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
   margin: 80px 0px 20px 0px;
   width: 100%;
 }
@@ -173,3 +181,5 @@
   -webkit-box-sizing: content-box; 
   width: 90%;
 }
+
+
