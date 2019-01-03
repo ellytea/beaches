@@ -1,83 +1,72 @@
 @import 'variables';
 
-
-.App {
-  text-align: center;
-}
-
 .landing-page {
   background-image: url('../images/guard.jpg');
   background-size: cover;
   bottom: 0;
   left: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
   overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
 }
 
 .landing-headline {
-  margin-top:45px;
-  font-size: 4em;
-  padding-left: 45px;
-  margin-right: 700px;
-  margin-bottom: 30px;
   background-color: $color-ltcoral;
-  font-family: sans-serif;
-  letter-spacing: 2px;
   color: $color-sea;
+  font-family: sans-serif;
+  font-size: 4em;
+  letter-spacing: 2px;
+  margin: 45px 700px 30px 0px;
+  padding-left: 45px;
 }
 
 .landing-subhead {
+  color: $color-sea;
+  font-family: sans-serif;
   font-size: 1.3em;
   font-weight: 550;
-  margin-right: 715px;
-  margin-bottom: 13px;
-  padding-left: 50px;
-  font-family: sans-serif;
   letter-spacing: 2px;
-  color: $color-sea;
-  
+  margin: 0px 715px 13px 0px;
+  padding-left: 50px;
 }
 
 .landing-button {
+  background-color: $color-ltcoral;
+  background: none;
   border: 3px solid white;
-  background-color: rgba(254,173,185,0.1);
   color: white;
-  text-transform: uppercase;
+  font-family: $cursive-font;
   font-size: 1.1em;
   margin: 2px 20px 0px 50px;
   padding: 0px 4px 0px 4px;
-  font-family: $cursive-font;
+  text-transform: uppercase;
 }
 
 .landing-button:hover {
   color: white;
-  filter: drop-shadow(0 0 0.75rem crimson);
   cursor: pointer;
+  filter: $dropshadow-pink;
+}
+
+.sun {
+ background: white;
+ border-radius:50%;
+ box-shadow: 0px 0px 200px 70px pink;
+ height:50px;
+ margin: 148px 0px 0px 211px;
+ opacity:0.4;
+ -webkit-animation-direction: alternate-reverse;
+ -webkit-animation-duration: 3s;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-name: glow;
+ width:50px;
 }
 
 .hide {
   display: none;
-} 
-
-.sun { 
-  margin-left: 211px; 
-  margin-top: 145px;
-  width:50px;
-  height:50px;
-  border-radius:50%;  
-  background: white;
-  opacity:0.3;      
-  box-shadow: 0px 0px 400px 100px pink; 
-  -webkit-animation-duration: 3s;
-  -webkit-animation-name: glow;
-  -webkit-animation-direction: alternate-reverse;
-  -webkit-animation-iteration-count: infinite;
 }
-
-
     
 @-webkit-keyframes glow {
     from { box-shadow: 0 0 0px yellow; }
