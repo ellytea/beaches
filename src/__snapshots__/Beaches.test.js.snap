@@ -22,7 +22,7 @@ exports[`Beaches should match the snapshot with all data passed in 1`] = `
     className="beach-image"
   >
     <div
-      className="stacked-image borderbox"
+      className="bottom-image border"
     >
       <img
         height="400"
@@ -45,7 +45,19 @@ exports[`Beaches should match the snapshot with all data passed in 1`] = `
       Filter Your Search
     </h1>
     <Filter
-      beachCounties={Array []}
+      beachCounties={
+        Array [
+          Object {
+            "beaches": Array [
+              "Montaña de Oro State Beach",
+              "Cayucos State Beach",
+              "Pismo State Beach",
+              "William Randolph Hearst Memorial State Beach",
+            ],
+            "name": "San Luis Obispo County",
+          },
+        ]
+      }
       filterByCounty={[Function]}
     />
   </section>
@@ -71,29 +83,16 @@ exports[`Beaches should match the snapshot with all data passed in 1`] = `
         src="https://i.imgur.com/VdqbEDr.jpg"
       />
     </div>
-    <div
-      className="beach-card"
-      onClick={[Function]}
-    >
-      <h1
-        className="beach-name"
-      >
-        Cayucos State Beach
-      </h1>
-      <h2
-        className="beach-county"
-      >
-        San Luis Obispo County
-      </h2>
-      <img
-        className="beach-pics"
-        src="https://i.imgur.com/u7gAUPB.png"
-      />
-    </div>
   </div>
   <BeachesCard
     closeBeach={[Function]}
-    selectedBeach=""
+    selectedBeach={
+      Object {
+        "county": "San Luis Obispo County",
+        "image": "https://i.imgur.com/VdqbEDr.jpg",
+        "name": "Montaña de Oro State Beach",
+      }
+    }
   />
 </div>
 `;
