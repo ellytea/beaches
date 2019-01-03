@@ -9,10 +9,14 @@ describe ('LandingPage', () => {
     <LandingPage renderBeaches={renderBeachesMock} />
     )
 
+  it('should match the snapshot with all data passed in', () => {
+    expect(wrapper).toMatchSnapshot();
+  })
 
-  it('should change landingPage state to false when clicked', () => {
+  it('should invoke renderBeaches and change landingPage state to false when clicked', () => {
         wrapper.find('.landing-button').simulate('click');
+        expect(renderBeachesMock).toBeCalled();
         expect(wrapper.state('landingPage')).toEqual(false);
-    })
+  })
 
 })

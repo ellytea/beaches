@@ -23,7 +23,7 @@ describe('Filter', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
-  it('should invoke filterByCounty function', () => {
+  it('should invoke filterByCounty function on change', () => {
     wrapper.find('.filter').simulate('change', { target: {value: "San Luis Obispo County"} })
     expect(filterByCountyMock).toBeCalled();
   })
