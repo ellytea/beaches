@@ -23,7 +23,7 @@
   padding-left: 45px;
   margin-right: 700px;
   margin-bottom: 30px;
-  background-color: rgba(254,173,185,0.5);
+  background-color: $color-ltcoral;
   font-family: sans-serif;
   letter-spacing: 2px;
   color: #18153C;
@@ -48,7 +48,7 @@
   text-transform: uppercase;
   font-size: 1.1em;
   margin: 2px 20px 0px 50px;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: $cursive-font;
 }
 
 .landing-button:hover {
