@@ -14,16 +14,23 @@ const beach = { "name": "Montaña de Oro State Beach",
     "hours": "6AM-10PM",
     "fire-pits": false,
     "image": "https://i.imgur.com/VdqbEDr.jpg" 
-  }
+  };
+
+const closeMock = jest.fn();
 
 describe ('BeachesCard', () => {
   let mountedComponent = shallow(
     <BeachesCard selectedBeach = {beach}
-                 closeBeach = { jest.fn()} />
+                 closeBeach = {closeMock} />
     )
 
   it('should make a card from the beach info', () => {
     expect(mountedComponent).toMatchSnapshot();
-  }) 
+  })
+
+  it('should change beachCard state to empty string when clicked', () => {
+      mountedComponent.find('.pop-btn').simulate('click');
+      expect(closeMock).toBeCalled();
+  })
 
 })
